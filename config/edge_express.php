@@ -37,3 +37,10 @@ $conn = new mysqli($servername , $username , $password , $dbname);
 // } else {
 //     echo "Error creating table: " . $conn->error . "<br>";
 // }
+
+$sql3 = "CREATE TABLE IF NOT EXISTS admin(
+       admin_id INT AUTO_INCREMENT PRIMARY KEY,
+       username VARCHAR(50) NOT NULL UNIQUE,
+       password VARCHAR(8) NOT NULL,
+       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)";
