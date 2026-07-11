@@ -10,7 +10,7 @@
             <h4>Order. Collect. Enjoy.</h4>
         </div>
         <div class="main_btn_section">
-            <a href="login.php">
+            <a href="login.html">
                 <button class="get_started">Get Started</button>
             </a>
         </div>
