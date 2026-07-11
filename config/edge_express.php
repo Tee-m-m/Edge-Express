@@ -52,12 +52,12 @@ $conn = new mysqli($servername , $username , $password , $dbname);
 //        echo "Error creating the table: " .$conn->error . "<br>";
 // }
 
-$sql3_insert = 'INSERT INTO admin(username, password) VALUES (
-         "admin", "$2y$10$JbYPTPsi0FRZVhBjcIp9P.Nor5W6QI/mltAEoUDcfxNTscB9qopo.")';
+// $sql3_insert = 'INSERT INTO admin(username, password) VALUES (
+//          "admin", "$2y$10$JbYPTPsi0FRZVhBjcIp9P.Nor5W6QI/mltAEoUDcfxNTscB9qopo.")';
 
-if ($conn->query($sql3_insert) === TRUE) {
-       echo "Inserted admin details successfully!<br>";
-}
-else{
-       echo "Error inserting data: " .$conn->error . "<br>";
-}
+// if ($conn->query($sql3_insert) === TRUE) {
+//        echo "Inserted admin details successfully!<br>";
+// }
+// else{
+//        echo "Error inserting data: " .$conn->error . "<br>";
+// }
