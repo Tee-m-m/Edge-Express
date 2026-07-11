@@ -38,16 +38,26 @@ $conn = new mysqli($servername , $username , $password , $dbname);
 //     echo "Error creating table: " . $conn->error . "<br>";
 // }
 
-$sql3 = "CREATE TABLE IF NOT EXISTS admin(
-       admin_id INT AUTO_INCREMENT PRIMARY KEY,
-       username VARCHAR(50) NOT NULL UNIQUE,
-       password VARCHAR(255) NOT NULL,
-       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)";
+// $sql3 = "CREATE TABLE IF NOT EXISTS admin(
+//        admin_id INT AUTO_INCREMENT PRIMARY KEY,
+//        username VARCHAR(50) NOT NULL UNIQUE,
+//        password VARCHAR(255) NOT NULL,
+//        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+// )";
 
-if ($conn->query($sql3) === TRUE) {
-       echo "Created the admin table sucessfully!<br>";
+// if ($conn->query($sql3) === TRUE) {
+//        echo "Created the admin table sucessfully!<br>";
+// }
+// else{
+//        echo "Error creating the table: " .$conn->error . "<br>";
+// }
+
+$sql3_insert = 'INSERT INTO admin(username, password) VALUES (
+         "admin", "$2y$10$JbYPTPsi0FRZVhBjcIp9P.Nor5W6QI/mltAEoUDcfxNTscB9qopo.")';
+
+if ($conn->query($sql3_insert) === TRUE) {
+       echo "Inserted admin details successfully!<br>";
 }
 else{
-       echo "Error creating the table: " .$conn->error . "<br>";
+       echo "Error inserting data: " .$conn->error . "<br>";
 }
