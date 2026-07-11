@@ -41,6 +41,13 @@ $conn = new mysqli($servername , $username , $password , $dbname);
 $sql3 = "CREATE TABLE IF NOT EXISTS admin(
        admin_id INT AUTO_INCREMENT PRIMARY KEY,
        username VARCHAR(50) NOT NULL UNIQUE,
-       password VARCHAR(8) NOT NULL,
+       password VARCHAR(255) NOT NULL,
        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )";
+
+if ($conn->query($sql3) === TRUE) {
+       echo "Created the admin table sucessfully!<br>";
+}
+else{
+       echo "Error creating the table: " .$conn->error . "<br>";
+}
