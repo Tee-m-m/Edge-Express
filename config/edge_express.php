@@ -61,3 +61,17 @@ $conn = new mysqli($servername , $username , $password , $dbname);
 // else{
 //        echo "Error inserting data: " .$conn->error . "<br>";
 // }
+
+// $sql4 = "CREATE TABLE IF NOT EXISTS fooditems (
+//           food_id INT AUTO_INCREMENT PRIMARY KEY, 
+//           name VARCHAR(100) NOT NULL,
+//           price FLOAT NOT NULL,
+//           category VARCHAR(100) NOT NULL 
+// )";
+
+// if ($conn->query($sql4) === TRUE) {
+//     echo "Created the fooditems table successfully!<br>";
+// }
+// else{
+//     echo "Error creating the table: " .$conn->error . "<br>";
+// }
