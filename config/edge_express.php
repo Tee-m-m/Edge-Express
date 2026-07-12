@@ -75,4 +75,5 @@ if ($conn->connect_error) {
 
 $sql4_alter = "ALTER TABLE fooditems ADD COLUMN image VARCHAR(255)";
 $conn->query($sql4_alter);
+
 ?>
