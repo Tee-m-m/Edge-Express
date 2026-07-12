@@ -2,7 +2,7 @@
 <?php
 // login.php
 session_start();
-include 'database/db.php';
+include 'config/edge_express.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = trim($_POST['email']);

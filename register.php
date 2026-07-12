@@ -1,6 +1,6 @@
 <?php
 // register.php
-include 'db.php';
+include 'config/edge_express.php';
 
 if (isset($_POST['full_name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['phone']) && isset($_POST['faculty'])) {
     
