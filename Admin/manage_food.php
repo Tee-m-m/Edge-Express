@@ -79,6 +79,7 @@ function getAllFood($conn){
     </head>
     <body>
         <div class="manage-food">
+            <img src="EE logo.png">
             <h1>Manage Food Items</h1>
             <a href="dashboard.php">Back to Dashboard</a>
 

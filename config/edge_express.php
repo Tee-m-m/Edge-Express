@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// //USERS TABLE (Handles Students & Staff)
+//USERS TABLE (Handles Students & Staff)
 // $sql1 = "CREATE TABLE IF NOT EXISTS users (
 //     user_id INT AUTO_INCREMENT PRIMARY KEY,
 //     full_name VARCHAR(100) NOT NULL,
