@@ -2,7 +2,7 @@
 <?php
 // login.php
 session_start();
-include 'db.php';
+include 'database/db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = trim($_POST['email']);
