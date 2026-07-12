@@ -163,9 +163,8 @@ ALTER TABLE `orders`
   ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE;
 COMMIT;
 
--- ============================================================
+
 -- Added by Member 2 (Cart & Pre-Order module)
--- ============================================================
 
 ALTER TABLE `orders`
   ADD COLUMN `pickup_time` DATETIME NULL AFTER `user_id`,
