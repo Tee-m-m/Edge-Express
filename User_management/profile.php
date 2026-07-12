@@ -1,11 +1,11 @@
 <?php
 // profile.php
 session_start();
-include 'db.php';
+include 'config/edge_express.php';
 
 // If a student tries to access this page without logging in, block them!
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.html");
+    header("Location:  ../login.html");
     exit();
 }
 

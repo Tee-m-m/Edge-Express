@@ -1,10 +1,10 @@
 <?php
 // changepw.php
 session_start();
-include 'db.php';
+include 'config/edge_express.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.html");
+    header("Location:../login.html");
     exit();
 }
 
