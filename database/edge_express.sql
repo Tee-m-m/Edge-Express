@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 11, 2026 at 11:14 AM
+-- Generation Time: Jul 12, 2026 at 06:10 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -24,12 +24,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `admin_id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `username`, `password`, `created_at`) VALUES
+(1, 'admin@nsbm.lk', '$2y$10$7R9oP8mN7LkJ6H5gF4eD3c2b1aZ9yX8wW7vU6tS5rQ4p3o2n1m0lK', '2026-07-12 03:58:54');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fooditems`
+--
+
+CREATE TABLE `fooditems` (
+  `food_id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `price` float NOT NULL,
+  `category` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `orders`
 --
 
 CREATE TABLE `orders` (
   `order_id` int(11) NOT NULL,
-  `student_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `total_price` decimal(10,2) NOT NULL,
   `order_status` varchar(50) DEFAULT 'Pending',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
@@ -38,52 +71,74 @@ CREATE TABLE `orders` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `students`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `students` (
-  `student_id` int(11) NOT NULL,
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL,
   `full_name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password_hash` varchar(255) NOT NULL,
+  `role` varchar(20) NOT NULL DEFAULT 'student',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `phone_number` varchar(150) DEFAULT NULL,
   `faculty` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `students`
+-- Dumping data for table `users`
 --
 
-INSERT INTO `students` (`student_id`, `full_name`, `email`, `password_hash`, `created_at`, `phone_number`, `faculty`) VALUES
-(1, 'Adithi', 'adithiarundi@gmail.com', '$2y$10$/1Js/hsrTfGWrU.xbAWJKerBtDevGvFT9MZnIy6sgnMjqz1NalWe6', '2026-07-03 06:17:21', '071234567', 'foc'),
-(3, 'Adithi Arundi', 'appealingflora@gmail.com', '$2y$10$bY/B3RWgR14PqfICkT8ZQuyVO9He5AgTjT30qk4uyL90jnTO1xU8u', '2026-07-03 06:21:09', NULL, NULL),
-(5, 'Adithi Arundi', 'abc@gmail.com', '$2y$10$8gH/bcismJZuuG6OuqZX1ucYZSBTLJVieMhSZ2DmTmnWJQvRvvOSq', '2026-07-03 06:25:30', NULL, NULL),
-(12, '', '', '$2y$10$BvYxfoPBmMInVjGBI/YUTeZg5M4BfbKYe1UCj7b2w6KgjMlC0wt0y', '2026-07-03 09:58:59', '', ''),
-(15, 'jdksk', 'asd@gmail.com', '$2y$10$PwsUGJGU/kW7BwJK3PMG3./jehVzzxS9vuxey2mJmHCWVnWX.uKUC', '2026-07-03 10:01:30', '0719921688', 'foc'),
-(17, 'gfy', 'fdgg@gmail.com', '$2y$10$Gy5pWKMlrbYxOWnU0LZOU.yh8.POum2Rjlr2vLhs.WqCE4OXT6p3O', '2026-07-03 10:58:14', '0719921678', 'foc');
+INSERT INTO `users` (`user_id`, `full_name`, `email`, `password_hash`, `role`, `created_at`, `phone_number`, `faculty`) VALUES
+(23, 'Student', 'customer@nsbm.lk', '$2y$10$ad9C1tXIrKnXJ93kRbhVF..DEo/f5qkQWDLZtP6cPpoATGUH5/ZWm', 'student', '2026-07-12 03:53:44', '0717721621', 'foc'),
+(24, 'Staff', 'staff@nsbm.lk', '$2y$10$3pxZ73wtcfLrVWwgiXPCZO8i4j7Ng79sZRXf/H88VHuxcTacp4mvS', 'staff', '2026-07-12 03:54:53', '0718821621', 'fob');
 
 --
 -- Indexes for dumped tables
 --
 
 --
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`admin_id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- Indexes for table `fooditems`
+--
+ALTER TABLE `fooditems`
+  ADD PRIMARY KEY (`food_id`);
+
+--
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`order_id`),
-  ADD KEY `student_id` (`student_id`);
+  ADD KEY `orders_ibfk_1` (`user_id`);
 
 --
--- Indexes for table `students`
+-- Indexes for table `users`
 --
-ALTER TABLE `students`
-  ADD PRIMARY KEY (`student_id`),
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`user_id`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `fooditems`
+--
+ALTER TABLE `fooditems`
+  MODIFY `food_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -92,10 +147,10 @@ ALTER TABLE `orders`
   MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `students`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `students`
-  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Constraints for dumped tables
@@ -105,7 +160,7 @@ ALTER TABLE `students`
 -- Constraints for table `orders`
 --
 ALTER TABLE `orders`
-  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `students` (`student_id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
