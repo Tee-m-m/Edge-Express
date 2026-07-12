@@ -77,7 +77,7 @@ $stmt->close();
             <a href="edit-profile.php"class="btn btn-primary rounded-pill"><i class="bi bi-pencil-square"></i> Edit Profile </a>
             <a href="changepw.php"class="btn btn-outline-primary rounded-pill"><i class="bi bi-key"></i> Change Password </a>
             <a href="menu.php"class="btn btn-outline-dark rounded-pill"><i class="bi bi-arrow-left"></i> Back to Menu</a>
-            <a href="logout.php"class="btn btn-danger rounded-pill"><i class="bi bi-box-arrow-right"></i>Logout</a>
+            <a href="../logout.php"class="btn btn-danger rounded-pill"><i class="bi bi-box-arrow-right"></i>Logout</a>
 
             </div>
         </div>

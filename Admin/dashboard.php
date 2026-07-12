@@ -24,7 +24,7 @@ if (!isset($_SESSION["admin_id"])) {
                 alert("Login successful! Welcome to the Admin Dashboard");
             </script>
             <?php } ?>
-            <a href="logout.php">
+            <a href="../logout.php">
                 <button>Logout</button>
             </a>
         </div>
