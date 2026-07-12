@@ -1,0 +1,278 @@
+/* ===========================================
+   EDGE EXPRESS - GLOBAL STYLES
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+    --primary:#27D5FF;
+    --secondary:#00C2A8;
+
+    --dark:#081120;
+    --dark2:#0F172A;
+    --dark3:#16213E;
+
+    --white:#ffffff;
+    --text:#D9E3F0;
+    --gray:#94A3B8;
+
+    --glass:rgba(255,255,255,.08);
+    --glass-border:rgba(255,255,255,.15);
+
+    --shadow:0 8px 35px rgba(0,0,0,.35);
+
+    --radius:22px;
+
+    --transition:.35s ease;
+
+}
+
+/* ===========================================
+ RESET
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--white);
+
+    background:
+    linear-gradient(
+    135deg,
+    #081120 0%,
+    #0F172A 50%,
+    #16213E 100%);
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+    position:relative;
+
+}
+
+/* ===========================================
+ LINKS
+=========================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ===========================================
+ BUTTONS
+=========================================== */
+
+.primary-btn{
+
+    background:linear-gradient(135deg,#27D5FF,#00C2A8);
+
+    color:white;
+
+    padding:15px 32px;
+
+    border-radius:50px;
+
+    display:inline-block;
+
+    font-weight:600;
+
+    transition:.4s;
+
+    box-shadow:0 0 25px rgba(39,213,255,.35);
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 40px rgba(39,213,255,.55);
+
+}
+
+.glass-btn{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+}
+
+.glass-btn:hover{
+
+    background:rgba(255,255,255,.16);
+
+}
+
+/* ===========================================
+ BACKGROUND BLOBS
+=========================================== */
+
+.background-blur{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(140px);
+
+    z-index:-2;
+
+    animation:blobMove 12s ease-in-out infinite alternate;
+
+}
+
+.blur1{
+
+    width:420px;
+
+    height:420px;
+
+    background:#00C2A8;
+
+    top:-100px;
+
+    left:-120px;
+
+}
+
+.blur2{
+
+    width:500px;
+
+    height:500px;
+
+    background:#27D5FF;
+    bottom:-120px;
+
+    right:-140px;
+
+}
+@keyframes blobMove{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+transform:translate(70px,-60px);
+
+}
+
+}
+
+/* ===========================================
+ GLASS CARD
+=========================================== */
+
+.glass-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:24px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+/* ===========================================
+ SECTION
+=========================================== */
+
+section{
+
+    width:100%;
+
+}
+
+.cursor-glow{
+
+position:fixed;
+
+width:250px;
+
+height:250px;
+
+background:rgba(35,213,255,.15);
+
+border-radius:50%;
+
+filter:blur(90px);
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+z-index:0;
+
+transition:.08s;
+
+}
+.food-btn{
+
+display:inline-block;
+margin-top:25px;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+background:linear-gradient(135deg,#23D5FF,#00C896);
+
+color:#fff;
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:.35s;
+
+box-shadow:0 10px 25px rgba(35,213,255,.25);
+
+}
+
+.food-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 35px rgba(35,213,255,.45);
+
+}

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edge Express | Menu</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <img src="assets/images/logo/logo1.jpg" alt="Edge Express Logo">
+
+        Edge Express
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.php">Home</a></li>
+
+        <li><a href="menu.php" class="active">Menu</a></li>
+
+        <li><a href="about.php">About</a></li>
+
+        <li><a href="contact.php">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-btn">
+
+        <a href="login.php">Login</a>
+
+    </div>
+
+</nav>
+
+<!-- ================= MENU HERO ================= -->
+
+<section class="menu-hero">
+
+    <div class="menu-hero-content">
+
+        <span>🍴 EDGE EXPRESS MENU</span>
+
+        <h1>Explore Today's Menu</h1>
+
+        <p>
+            Freshly prepared meals and drinks waiting for you.
+            Pre-order now and collect without waiting.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="menu-search">
+
+    <div class="search-box">
+
+        <i class="fas fa-search"></i>
+
+        <input
+            type="text"
+            placeholder="Search burgers, drinks, desserts..."
+        >
+
+    </div>
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories">
+
+    <button class="active-category" data-filter="all">
+        🍽️ All
+    </button>
+
+    <button data-filter="meal">
+        🍔 Meals
+    </button>
+
+    <button data-filter="drink">
+        🥤 Drinks
+    </button>
+
+    <button data-filter="dessert">
+        🍰 Desserts
+    </button>
+
+</section>
+
+<!-- ================= FOOD ITEMS ================= -->
+
+<section class="specials">
+
+    <div class="special-grid">
+
+        <!-- Burger -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.9</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/burger1.png" alt="Burger">
+
+            <h3>Chicken Burger</h3>
+
+            <p class="food-desc">
+                Fresh grilled chicken with cheese & lettuce.
+            </p>
+
+            <span class="price">Rs.650</span>
+
+            <small>⏱ Ready in 7 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=1" class="details-btn">
+    
+                     View
+                    
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Fried Rice -->
+
+        <div class="food-item meal ">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/friedrice.png" alt="Fried Rice">
+
+            <h3>Fried Rice</h3>
+
+            <p class="food-desc">
+                Freshly prepared fried rice with vegetables and chicken.
+            </p>
+
+            <span class="price">Rs.250</span>
+
+            <small>⏱ Ready in 10 mins</small>
+
+            <div class="food-buttons">
+
+             <a href="menu-details.php?id=2" class="details-btn">   
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+
+        </div>
+
+        
+        <!--noodles -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.9</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/noodles.png" alt="Noodles">
+
+            <h3>Noodles</h3>
+
+            <p class="food-desc">
+                Freshly prepared noodles with vegetables and chicken.
+            </p>
+
+            <span class="price">Rs.200</span>
+
+            <small>⏱ Ready in 9 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=3" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+        
+        <!--  Rice -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/rice.png" alt="Rice">
+
+            <h3>Rice</h3>
+
+            <p class="food-desc">
+                Freshly prepared fried rice with vegetables and spice.
+            </p>
+
+            <span class="price">Rs.150</span>
+
+            <small>⏱ Ready in 7 mins</small>
+
+            <div class="food-buttons">
+
+            <a href="menu-details.php?id=4" class="details-btn">   
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+                <!-- Pizza -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 5.0</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/pizza.png" alt="Pizza">
+
+            <h3>Pizza</h3>
+
+            <p class="food-desc">
+                Delicious pizza with various toppings and cheese.
+            </p>
+
+            <span class="price">Rs.250</span>
+
+            <small>⏱ Ready in 7 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=5" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+                <!--kottu  -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/kottu.png" alt="Kottu">
+
+            <h3>Kottu</h3>
+
+            <p class="food-desc">
+                Tasty kottu with fresh ingredients and special spices.
+            </p>
+
+            <span class="price">Rs.170</span>
+
+            <small>⏱ Ready in 9 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=6" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+                <!-- Biriyani -->
+
+        <div class="food-item meal ">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/biriyani.png" alt="Biriyani">
+
+            <h3>Biriyani</h3>
+
+            <p class="food-desc">
+                Flavorful biriyani with tender meat and aromatic spices.
+            </p>
+
+            <span class="price">Rs.250</span>
+
+            <small>⏱ Ready in 10 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=7" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+                <!-- iddi appa  -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/iddi appa.png" alt="Iddi Appa">
+
+            <h3>Iddi Appa</h3>
+
+            <p class="food-desc">
+                Traditional Iddi Appa with authentic flavors and spices.
+            </p>
+
+            <span class="price">Rs.150</span>
+
+            <small>⏱ Ready in 7 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=8" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+        
+                 <!-- Drinks -->
+                <!-- ice coffee -->
+
+        <div class="food-item drink">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/icecoffee.png" alt="Ice Coffee">
+
+            <h3>Ice Coffee</h3>
+
+            <p class="food-desc">
+                Refreshing ice coffee with a perfect balance of flavor and caffeine.
+            </p>
+
+            <span class="price">Rs.120</span>
+
+            <small>⏱ Ready in 6 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=9" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+        
+        <div class="food-item drink">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/mango.png" alt="Mango Smoothy">
+
+            <h3>Mango Smoothy</h3>
+
+            <p class="food-desc">
+                Refreshing mango smoothie with a perfect balance of flavor and creaminess.
+            </p>
+
+            <span class="price">Rs.100</span>
+
+            <small>⏱ Ready in 6 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=10" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+        
+        <div class="food-item drink">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/orange.png" alt="Orange Juice">
+
+            <h3>Orange Juice</h3>
+
+            <p class="food-desc">
+                A refreshing orange juice with a perfect balance of flavor and vitamins.
+            </p>
+
+            <span class="price">Rs.150</span>
+
+            <small>⏱ Ready in 5 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=11" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+        
+        <div class="food-item drink">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/mohito.png" alt="Mohito">
+
+            <h3>Mojito</h3>
+
+            <p class="food-desc">
+                Refreshing mojito with a perfect balance of flavor.
+            </p>
+
+            <span class="price">Rs.160</span>
+
+            <small>⏱ Ready in 8 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=12" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+             <!-- Dessert --->
+             <!--ice cream--> 
+        
+        <div class="food-item dessert">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.9</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/icecream.png" alt="Ice Cream">
+
+            <h3>Ice Cream</h3>
+
+            <p class="food-desc">
+                Refreshing ice cream with a perfect balance of flavor and creaminess.
+            </p>
+
+            <span class="price">Rs.130</span>
+
+            <small>⏱ Ready in 5 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=13" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+        <!--Bpudding--> 
+        
+        <div class="food-item dessert">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.7</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/Bpudding.png" alt="Pudding">
+
+            <h3>Biscuit Pudding</h3>
+
+            <p class="food-desc">
+                Refreshing biscuit pudding with a perfect balance of flavor and creaminess.
+            </p>
+
+            <span class="price">Rs.100</span>
+
+            <small>⏱ Ready in 3 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=14" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+        <!--cake--> 
+        
+        <div class="food-item dessert">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.9</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/cake.png" alt="Cake">
+
+            <h3>RedVelvet Cake</h3>
+
+            <p class="food-desc">
+                Delicious red velvet cake with a perfect balance of flavor and creaminess.
+            </p>
+
+            <span class="price">Rs.130</span>
+
+            <small>⏱ Ready in 5 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=15" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+        <!--Cup Cake --> 
+        
+        <div class="food-item dessert">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.5</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="assets/images/products/Ccake.png" alt="Cup Cake">
+
+            <h3>Cup Cake</h3>
+
+            <p class="food-desc">
+                Delightful cupcake with a perfect balance of flavor and creaminess.
+            </p>
+
+            <span class="price">Rs.130</span>
+
+            <small>⏱ Ready in 5 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=16" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="#" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+         
+    </div>
+
+</section>
+
+<!-- ================= JS ================= -->
+
+<script src="assets/js/app.js"></script>
+
+<script src="assets/js/navbar.js"></script>
+
+<script src="assets/js/animations.js"></script>
+
+<script src="assets/js/menu.js"></script>
+
+<div class="floating-cart">
+
+    <i class="fas fa-shopping-cart"></i>
+
+    <span>3</span>
+
+</div>
+
+</body>
+
+</html>
