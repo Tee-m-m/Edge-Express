@@ -22,16 +22,16 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="../Assets/css/style.css">
 
-    <link rel="stylesheet" href="Assets/css/navbar.css">
+    <link rel="stylesheet" href="../Assets/css/navbar.css">
 
-    <link rel="stylesheet" href="Assets/css/hero.css">
-    <link rel="stylesheet" href="Assets/css/sections.css">
+    <link rel="stylesheet" href="../Assets/css/hero.css">
+    <link rel="stylesheet" href="../Assets/css/sections.css">
 
-    <link rel="stylesheet" href="Assets/css/animations.css">
+    <link rel="stylesheet" href="../Assets/css/animations.css">
 
-    <link rel="stylesheet" href="Assets/css/responsive.css">
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
 
 </head>
 
@@ -543,11 +543,11 @@
 
 
 
-<script src="Customer/js/app.js"></script>
+<script src="../Customer/js/app.js"></script>
 
-<script src="Customer/js/navbar.js"></script>
+<script src="../Customer/js/navbar.js"></script>
 
-<script src="Customer/js/animations.js"></script>
+<script src="../Customer/js/animations.js"></script>
 <div class="cursor-glow"></div>
 
 
