@@ -24,7 +24,7 @@
 
 
     <link rel="stylesheet" href="../Assets/css/style.css">
-
+    <link rel="stylesheet" href="../Assets/css/cart.css">
     <link rel="stylesheet" href="../Assets/css/navbar.css">
 
     <link rel="stylesheet" href="../Assets/css/hero.css">
