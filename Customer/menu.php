@@ -1,5 +1,26 @@
 <?php
 session_start();
+
+// Get current cart count
+$cartCount = 0;
+
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+
+// Count total items
+$total_items = 0;
+
+if(isset($_SESSION['cart'])){
+
+    foreach($_SESSION['cart'] as $qty){
+
+        $total_items += $qty;
+
+    }
+
+}
+
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../login.html");
     exit();
@@ -140,8 +161,20 @@ if (!isset($_SESSION['user_id'])) {
                      View
                 </a>
 
-                <!-- Use this exact syntax for your Add buttons on menu.php -->
-                <a href="cart.php?action=add&id=1" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
+                
+                <form action="../Customer/cart.php" method="POST">
+
+    <input type="hidden" name="action" value="add">
+
+    <input type="hidden" name="food_id" value="1">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
             </div>
 
         </div>
@@ -178,7 +211,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php?action=add&id=2" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
+                <form action="../Customer/cart.php" method="POST">
+
+    <input type="hidden" name="action" value="add">
+
+    <input type="hidden" name="food_id" value="2">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
 
@@ -217,7 +262,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php?action=add&id=3" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
+                <form action="../Customer/cart.php" method="POST">
+
+    <input type="hidden" name="action" value="add">
+
+    <input type="hidden" name="food_id" value="3">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
         </div>
@@ -255,7 +312,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php?action=add&id=4" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
+                <form action="../Customer/cart.php" method="POST">
+
+    <input type="hidden" name="action" value="add">
+
+    <input type="hidden" name="food_id" value="4">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
         </div>
@@ -292,7 +361,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php?action=add&id=5" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
+                <form action="../Customer/cart.php" method="POST">
+
+    <input type="hidden" name="action" value="add">
+
+    <input type="hidden" name="food_id" value="5">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
         </div>
@@ -329,7 +410,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php?action=add&id=6" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
+                <form action="../Customer/cart.php" method="POST">
+
+    <input type="hidden" name="action" value="add">
+
+    <input type="hidden" name="food_id" value="6">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
         </div>
@@ -365,7 +458,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php?action=add&id=7" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
+                <form action="../Customer/cart.php" method="POST">
+
+    <input type="hidden" name="action" value="add">
+
+    <input type="hidden" name="food_id" value="7">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
         </div>
@@ -401,7 +506,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php?action=add&id=8" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
+                <form action="../Customer/cart.php" method="POST">
+
+    <input type="hidden" name="action" value="add">
+
+    <input type="hidden" name="food_id" value="8">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
         </div>
@@ -439,11 +556,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php" class="cart-btn">
+                <form action="../Customer/cart.php" method="POST">
 
-                    <i class="fas fa-cart-plus"></i>
+    <input type="hidden" name="action" value="add">
 
-                    Add
+    <input type="hidden" name="food_id" value="9">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
                 </a>
 
@@ -480,11 +605,20 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php" class="cart-btn">
+                <form action="../Customer/cart.php" method="POST">
 
-                    <i class="fas fa-cart-plus"></i>
+    <input type="hidden" name="action" value="add">
 
-                    Add
+    <input type="hidden" name="food_id" value="10">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
+
 
                 </a>
 
@@ -522,13 +656,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php" class="cart-btn">
+                <form action="../Customer/cart.php" method="POST">
 
-                    <i class="fas fa-cart-plus"></i>
+    <input type="hidden" name="action" value="add">
 
-                    Add
+    <input type="hidden" name="food_id" value="11">
 
-                </a>
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
         </div>
@@ -563,13 +703,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php" class="cart-btn">
+                <form action="../Customer/cart.php" method="POST">
 
-                    <i class="fas fa-cart-plus"></i>
+    <input type="hidden" name="action" value="add">
 
-                    Add
+    <input type="hidden" name="food_id" value="12">
 
-                </a>
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
         </div>
@@ -607,13 +753,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php" class="cart-btn">
+                <form action="../Customer/cart.php" method="POST">
 
-                    <i class="fas fa-cart-plus"></i>
+    <input type="hidden" name="action" value="add">
 
-                    Add
+    <input type="hidden" name="food_id" value="13">
 
-                </a>
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
             </div>
         </div>
@@ -650,11 +802,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php" class="cart-btn">
+                <form action="../Customer/cart.php" method="POST">
 
-                    <i class="fas fa-cart-plus"></i>
+    <input type="hidden" name="action" value="add">
 
-                    Add
+    <input type="hidden" name="food_id" value="14">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
                 </a>
 
@@ -693,11 +853,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php" class="cart-btn">
+                <form action="../Customer/cart.php" method="POST">
 
-                    <i class="fas fa-cart-plus"></i>
+    <input type="hidden" name="action" value="add">
 
-                    Add
+    <input type="hidden" name="food_id" value="15">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
                 </a>
 
@@ -736,11 +904,19 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-                <a href="cart.php" class="cart-btn">
+                <form action="../Customer/cart.php" method="POST">
 
-                    <i class="fas fa-cart-plus"></i>
+    <input type="hidden" name="action" value="add">
 
-                    Add
+    <input type="hidden" name="food_id" value="16">
+
+    <input type="hidden" name="quantity" value="1">
+
+    <button type="submit" class="cart-btn">
+        <i class="fas fa-cart-plus"></i> Add
+    </button>
+
+</form>
 
                 </a>
 
@@ -762,13 +938,17 @@ if (!isset($_SESSION['user_id'])) {
 
 <script src="../Customer/js/menu.js"></script>
 
-<div class="floating-cart">
+<a href="../Customer/cart.php" class="floating-cart">
 
     <i class="fas fa-shopping-cart"></i>
 
-    <span>3</span>
+    <?php if($total_items>0){ ?>
 
-</div>
+        <span><?php echo $total_items; ?></span>
+
+    <?php } ?>
+
+</a>
 
 </body>
 

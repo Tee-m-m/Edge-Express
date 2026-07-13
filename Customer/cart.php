@@ -14,19 +14,23 @@ if (!isset($_SESSION['cart'])) {
 }
 
 // ---- Add item to cart (menu.php sends food_id + quantity here) ----
-if (isset($_POST['action']) && $_POST['action'] == "add") {
+if (isset($_POST['action']) && $_POST['action']=="add") {
+
     $food_id = intval($_POST['food_id']);
     $quantity = intval($_POST['quantity']);
+
     if ($quantity < 1) {
         $quantity = 1;
     }
 
     if (isset($_SESSION['cart'][$food_id])) {
-        $_SESSION['cart'][$food_id] = $_SESSION['cart']
-        [$food_id] + $quantity;
+        $_SESSION['cart'][$food_id] += $quantity;
     } else {
         $_SESSION['cart'][$food_id] = $quantity;
     }
+
+    header("Location: ../Customer/menu.php");
+    exit();
 }
 
 // ---- Update quantities ----
