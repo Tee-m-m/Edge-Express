@@ -40,10 +40,14 @@ $result_orders = $conn->query($sql_orders);
 <html>
     <head>
         <title>Manage Orders</title>
+        <link rel="stylesheet" href="../Assets/css/style.css">
+        <link rel="stylesheet" href="../Assets/admincss/manage_orders.css">
     </head>
     <body>
-        <div class="manage-orders">
+        <div class="site-logo">
             <img src="../Resources/EE logo.png">
+        </div>
+        <div class="manage-orders">
             <h1>Manage Orders</h1>
             <a href="dashboard.php">Back to Dashboard</a>
 

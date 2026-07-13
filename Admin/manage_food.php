@@ -86,10 +86,14 @@ function getAllFood($conn){
 <html>
     <head>
         <title>Manage Food</title>
+        <link rel="stylesheet" href="../Assets/css/style.css">
+        <link rel="stylesheet" href="../Assets/admincss/manage_food.css">
     </head>
     <body>
-        <div class="manage-food">
+        <div class="site-logo">
             <img src="../Resources/EE logo.png">
+        </div>
+        <div class="manage-food">
             <h1>Manage Food Items</h1>
             <a href="dashboard.php">Back to Dashboard</a>
 

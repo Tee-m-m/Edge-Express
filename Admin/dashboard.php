@@ -11,13 +11,17 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] != "admin"){
 <html>
     <head>
         <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="../Assets/css/style.css">
+        <link rel="stylesheet" href="../Assets/admincss/dashboard.css">
     </head>
     <body>
-        <div class="admin-header">
+        <div class="site-logo">
             <img src="../Resources/EE logo.png">
-            <h1>ආයුබෝවන් | WELCOME</h1>
-            <h1><?php echo $_SESSION["user_name"]; ?>!</h1>
-            <h1>to the Admin Dashboard</h1>
+        </div>
+        <div class="admin-header">
+            <h1 class="welcome-pill">ආයුබෝවන් | WELCOME</h1>
+            <h1 class="admin-name"><?php echo $_SESSION["user_name"]; ?>!</h1>
+            <h1 class="admin-subtitle">to the Admin Dashboard</h1>
             <?php
             if(isset($_GET['login']) && $_GET['login'] == 'success') { ?>
             <script>
