@@ -209,12 +209,6 @@
                 Rs.650
             </span>
 
-            <a href="menu-details.php" class="food-btn">
-
-                 🛒 Add to Cart
-
-            </a>
-
         </div>
 
         <!-- Card 2 -->
@@ -230,11 +224,6 @@
             <span class="price">
                 Rs.350
             </span>
-
-            <a href="menu-details.php" class="food-btn">
-                🛒 Add to Cart
-            </a>
-
         </div>
 
         <!-- Card 3 -->
@@ -251,9 +240,6 @@
                 Rs.550
             </span>
 
-           <a href="menu-details.php" class="food-btn">
-                🛒 Add to Cart
-            </a>
 
         </div>
 
@@ -270,10 +256,6 @@
             <span class="price">
                 Rs.750
             </span>
-
-           <a href="menu-details.php" class="food-btn">
-                🛒 Add to Cart
-            </a>
 
         </div>
 
