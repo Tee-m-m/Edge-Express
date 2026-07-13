@@ -26,14 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     } else {
 
-        $_SESSION['pickup_time'] = date("Y-m-d") . " " . $pickup_time . ":00";
+        $_SESSION['pickup_time'] = $pickup_time;
 
-        header("Location: order-success.php");
+        header("Location: order_success.php");
 
         exit;
-
     }
-
 }
 
 // Simple list of time slots (canteen open 8 AM - 6 PM)

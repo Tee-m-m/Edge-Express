@@ -52,9 +52,9 @@
 
 <ul>
 
-<li><a href="index.php" class="active">Home</a></li>
+<li><a href="index.php" >Home</a></li>
 
-<li><a href="menu.php">Menu</a></li>
+<li><a href="menu.php"class="active">Menu</a></li>
 
 <li><a href="about.php">About</a></li>
 
