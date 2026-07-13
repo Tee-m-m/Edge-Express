@@ -17,6 +17,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 25px;
+    margin-top: 110px !important;
 }
 
 .auth-card{
