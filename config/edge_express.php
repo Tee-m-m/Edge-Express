@@ -75,5 +75,20 @@ if ($conn->connect_error) {
 
  //$sql4_alter = "ALTER TABLE fooditems ADD COLUMN image VARCHAR(255)";
  //$conn->query($sql4_alter);
+ // 5. CONTACT MESSAGES TABLE (For Customer Feedback Forms)
+// $sql5 = "CREATE TABLE IF NOT EXISTS contact_messages (
+//     message_id INT AUTO_INCREMENT PRIMARY KEY,
+//     name VARCHAR(100) NOT NULL,
+//     email VARCHAR(100) NOT NULL,
+//     subject VARCHAR(150) NOT NULL,
+//     message TEXT NOT NULL,
+//     submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+// ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;";
+
+// if ($conn->query($sql5) === TRUE) {
+//     echo "Contact messages table processed successfully!<br>";
+// } else {
+//     echo "Error creating table: " . $conn->error . "<br>";
+// }
 
 ?>
