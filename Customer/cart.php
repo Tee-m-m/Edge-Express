@@ -22,7 +22,8 @@ if (isset($_POST['action']) && $_POST['action'] == "add") {
     }
 
     if (isset($_SESSION['cart'][$food_id])) {
-        $_SESSION['cart'][$food_id] = $_SESSION['cart'][$food_id] + $quantity;
+        $_SESSION['cart'][$food_id] = $_SESSION['cart']
+        [$food_id] + $quantity;
     } else {
         $_SESSION['cart'][$food_id] = $quantity;
     }
@@ -48,7 +49,6 @@ if (isset($_GET['remove'])) {
     header("Location: cart.php");
     exit;
 }
-
 // ---- Get cart items from database ----
 $cartItems = array();
 $grandTotal = 0;
@@ -71,7 +71,7 @@ if (count($_SESSION['cart']) > 0) {
 ?>
 <html>
 <head>
-    <title>Your Cart | Edge Express</title>
+    <title>Your Cart | Edge.Express</title>
 </head>
 <body>
 
@@ -94,9 +94,7 @@ if (count($_SESSION['cart']) > 0) {
                     <th>Quantity</th>
                     <th>Subtotal</th>
                     <th></th>
-                </tr>
-
-                <?php foreach ($cartItems as $item) { ?>
+                </tr><?php foreach ($cartItems as $item) { ?>
                     <tr>
                         <td>
                             <img src="../Resources/<?php echo htmlspecialchars($item['image']); ?>" width="50" style="margin-right:10px;">
@@ -111,8 +109,7 @@ if (count($_SESSION['cart']) > 0) {
                         <td><a href="cart.php?remove=<?php echo $item['food_id']; ?>" class="remove-link">Remove</a></td>
                     </tr>
                 <?php } ?>
-
-            </table>
+                </table>
 
             <p class="fs-4"><strong>Grand Total: Rs. <?php echo number_format($grandTotal, 2); ?></strong></p>
 

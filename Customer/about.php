@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Edge Express | Skip the Queue</title>
+    <title>Edge.Express | Skip the Queue</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,16 +22,16 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../Assets/css/style.css">
 
-    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="../Assets/css/navbar.css">
 
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="../Assets/css/hero.css">
+    <link rel="stylesheet" href="../Assets/css/sections.css">
 
-    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="../Assets/css/animations.css">
 
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
 
 </head>
 
@@ -44,8 +44,13 @@
 
 <div class="logo">
 
+<<<<<<< HEAD
 <img src="Resources/EE logo.png">
    Edge Express
+=======
+<img src="../Resources/EE logo.png" alt="Edge Express Logo">
+   Edge.Express
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
    
 </div>
 
@@ -66,7 +71,7 @@
 
 <div class="nav-btn">
 
-<a href="login.php">Login</a>
+ <a href="../User_management/profile.php">My profile</a>
 
 </div>
 
@@ -74,7 +79,7 @@
 
 <section class="about-hero">
 
-    <span>ABOUT EDGE EXPRESS</span>
+    <span>ABOUT EDGE.EXPRESS</span>
 
     <h1>
         Making Campus Dining
@@ -82,7 +87,7 @@
     </h1>
 
     <p>
-        Edge Express is a smart food pre-ordering platform designed for NSBM students.
+        Edge.Express is a smart food pre-ordering platform designed for NSBM students.
         We help students order meals in advance, reduce waiting time,
         and enjoy more of their lecture breaks.
     </p>
@@ -93,7 +98,12 @@
 
     <div class="story-image">
 
+<<<<<<< HEAD
           <img src="Resources/EE logo.png" alt="Edge Express Logo">
+=======
+          <img src="../Resources/EE logo.png"
+         alt="Edge Express Logo">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
     </div>
 
@@ -103,7 +113,7 @@
 
         <p>
 
-            Edge Express was created to improve the dining experience for NSBM students by reducing long queues during lecture breaks.
+            Edge.Express was created to improve the dining experience for NSBM students by reducing long queues during lecture breaks.
              Our platform allows students to pre-order meals, save valuable time, and enjoy a smoother campus dining experience.
 
         </p>
@@ -170,7 +180,7 @@
 
         <span>⭐ WHY CHOOSE US</span>
 
-        <h2>Why Students Love Edge Express</h2>
+        <h2>Why Students Love Edge.Express</h2>
 
     </div>
 

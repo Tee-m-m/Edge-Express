@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Edge Express | Menu</title>
+    <title>Edge.Express | Menu</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +20,21 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- CSS -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="stylesheet" href="Assets/css/navbar.css">
     <link rel="stylesheet" href="Assets/css/hero.css">
     <link rel="stylesheet" href="Assets/css/sections.css">
     <link rel="stylesheet" href="Assets/css/animations.css">
     <link rel="stylesheet" href="Assets/css/responsive.css">
+=======
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../Assets/css/navbar.css">
+    <link rel="stylesheet" href="../Assets/css/hero.css">
+    <link rel="stylesheet" href="../Assets/css/sections.css">
+    <link rel="stylesheet" href="../Assets/css/animations.css">
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
 </head>
 
@@ -40,7 +49,11 @@
 
     <div class="logo">
 
+<<<<<<< HEAD
         <img src="Resources/EE logo.png" alt="Edge Express Logo">
+=======
+        <img src="../Resources/EE logo.png">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
         Edge Express
 
@@ -49,19 +62,13 @@
     <ul>
 
         <li><a href="index.php">Home</a></li>
-
         <li><a href="menu.php" class="active">Menu</a></li>
-
         <li><a href="about.php">About</a></li>
-
         <li><a href="contact.php">Contact</a></li>
-
     </ul>
 
     <div class="nav-btn">
-
-        <a href="login.php">Login</a>
-
+        <a href="../User_management/profile.php">My profile</a>
     </div>
 
 </nav>
@@ -69,37 +76,26 @@
 <!-- ================= MENU HERO ================= -->
 
 <section class="menu-hero">
-
     <div class="menu-hero-content">
-
         <span>🍴 EDGE EXPRESS MENU</span>
-
         <h1>Explore Today's Menu</h1>
-
         <p>
             Freshly prepared meals and drinks waiting for you.
             Pre-order now and collect without waiting.
         </p>
-
     </div>
-
 </section>
 
 <!-- ================= SEARCH ================= -->
 
 <section class="menu-search">
-
     <div class="search-box">
-
         <i class="fas fa-search"></i>
-
         <input
             type="text"
             placeholder="Search burgers, drinks, desserts..."
         >
-
     </div>
-
 </section>
 
 <!-- ================= CATEGORIES ================= -->
@@ -133,44 +129,41 @@
         <!-- Burger -->
 
         <div class="food-item meal">
-
             <div class="food-top">
-
                 <span class="rating">⭐ 4.9</span>
-
                 <i class="fa-regular fa-heart"></i>
-
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/burger1.png" alt="Burger">
 
+=======
+            <img src="../Resources/burger1.png" alt="Burger">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
             <h3>Chicken Burger</h3>
-
             <p class="food-desc">
                 Fresh grilled chicken with cheese & lettuce.
             </p>
-
             <span class="price">Rs.650</span>
-
             <small>⏱ Ready in 7 mins</small>
-
             <div class="food-buttons">
-
-                <a href="menu-details.php?id=1" class="details-btn">
-    
+                <a href="menu-details.php?id=1" class="details-btn">   
                      View
-                    
-
                 </a>
 
+<<<<<<< HEAD
                 <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
                     Add
 
+=======
+                <!-- Use this exact syntax for your Add buttons on menu.php -->
+                <a href="cart.php?action=add&id=1" class="cart-btn">
+                <i class="fas fa-cart-plus"></i> Add
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
                 </a>
-
             </div>
 
         </div>
@@ -187,7 +180,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/friedrice.png" alt="Fried Rice">
+=======
+            <img src="../Resources/friedrice.png" alt="Fried Rice">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Fried Rice</h3>
 
@@ -232,7 +229,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/noodles.png" alt="Noodles">
+=======
+            <img src="../Resources/noodles.png" alt="Noodles">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Noodles</h3>
 
@@ -276,7 +277,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/rice.png" alt="Rice">
+=======
+            <img src="../Resources/rice.png" alt="Rice">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Rice</h3>
 
@@ -319,7 +324,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/pizza.png" alt="Pizza">
+=======
+            <img src="../Resources/pizza.png" alt="Pizza">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Pizza</h3>
 
@@ -362,7 +371,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/kottu.png" alt="Kottu">
+=======
+            <img src="../Resources/kottu.png" alt="Kottu">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Kottu</h3>
 
@@ -404,7 +417,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/biriyani.png" alt="Biriyani">
+=======
+            <img src="../Resources/biriyani.png" alt="Biriyani">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Biriyani</h3>
 
@@ -446,7 +463,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/iddi appa.png" alt="Iddi Appa">
+=======
+            <img src="../Resources/iddi appa.png" alt="Iddi Appa">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Iddi Appa</h3>
 
@@ -490,7 +511,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/icecoffee.png" alt="Ice Coffee">
+=======
+            <img src="../Resources/icecoffee.png" alt="Ice Coffee">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Ice Coffee</h3>
 
@@ -531,7 +556,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/mango.png" alt="Mango Smoothy">
+=======
+            <img src="../Resources/mango.png" alt="Mango Smoothy">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Mango Smoothy</h3>
 
@@ -573,7 +602,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/orange.png" alt="Orange Juice">
+=======
+            <img src="../Resources/orange.png" alt="Orange Juice">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Orange Juice</h3>
 
@@ -614,7 +647,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/mohito.png" alt="Mohito">
+=======
+            <img src="../Resources/mohito.png" alt="Mohito">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Mojito</h3>
 
@@ -658,7 +695,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/icecream.png" alt="Ice Cream">
+=======
+            <img src="../Resources/icecream.png" alt="Ice Cream">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Ice Cream</h3>
 
@@ -701,7 +742,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/Bpudding.png" alt="Pudding">
+=======
+            <img src="../Resources/Bpudding.png" alt="Pudding">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Biscuit Pudding</h3>
 
@@ -744,7 +789,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/cake.png" alt="Cake">
+=======
+            <img src="../Resources/cake.png" alt="Cake">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>RedVelvet Cake</h3>
 
@@ -787,7 +836,11 @@
 
             </div>
 
+<<<<<<< HEAD
             <img src="Resources/Ccake.png" alt="Cup Cake">
+=======
+            <img src="../Resources/Ccake.png" alt="Cup Cake">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Cup Cake</h3>
 
@@ -825,6 +878,7 @@
 
 <!-- ================= JS ================= -->
 
+<<<<<<< HEAD
 <script src="Customer/js/app.js"></script>
 
 <script src="Customer/js/navbar.js"></script>
@@ -832,6 +886,15 @@
 <script src="Customer/js/animations.js"></script>
 
 <script src="Customer/js/menu.js"></script>
+=======
+<script src="js/app.js"></script>
+
+<script src="js/navbar.js"></script>
+
+<script src="js/animations.js"></script>
+
+<script src="js/menu.js"></script>
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
 <div class="floating-cart">
 

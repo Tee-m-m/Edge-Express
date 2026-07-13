@@ -37,7 +37,7 @@ for ($hour = 8; $hour <= 17; $hour++) {
 ?>
 <html>
 <head>
-    <title>Pickup Time | Edge Express</title>
+    <title>Pickup Time | Edge.Express</title>
 </head>
 <body>
 

@@ -71,7 +71,7 @@ if (isset($_POST['place_order'])) {
 ?>
 <html>
 <head>
-    <title>Checkout | Edge Express</title>
+    <title>Checkout | Edge.Express</title>
 </head>
 <body>
 

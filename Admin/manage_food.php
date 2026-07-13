@@ -2,7 +2,7 @@
 
 session_start();
 
-if(!isset($_SESSION["admin_id"])) {
+if (!isset($_SESSION["user_id"]) || $_SESSION["role"] != "admin") {
     header("Location: ../login.php");
     exit;
 }
@@ -89,7 +89,7 @@ function getAllFood($conn){
     </head>
     <body>
         <div class="manage-food">
-            <img src="EE logo.png">
+            <img src="../Resources/EE logo.png">
             <h1>Manage Food Items</h1>
             <a href="dashboard.php">Back to Dashboard</a>
 

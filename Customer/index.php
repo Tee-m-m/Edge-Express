@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Edge Express | Skip the Queue</title>
+    <title>Edge.Express | Skip the Queue</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,7 @@
 
     <!-- CSS -->
 
+<<<<<<< HEAD
     <link rel="stylesheet" href="Assets/css/style.css">
 
     <link rel="stylesheet" href="Assets/css/navbar.css">
@@ -32,6 +33,18 @@
     <link rel="stylesheet" href="Assets/css/animations.css">
 
     <link rel="stylesheet" href="Assets/css/responsive.css">
+=======
+    <link rel="stylesheet" href="../Assets/css/style.css">
+
+    <link rel="stylesheet" href="../Assets/css/navbar.css">
+
+    <link rel="stylesheet" href="../Assets/css/hero.css">
+    <link rel="stylesheet" href="../Assets/css/sections.css">
+
+    <link rel="stylesheet" href="../Assets/css/animations.css">
+
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
 </head>
 
@@ -44,8 +57,13 @@
 
 <div class="logo">
 
+<<<<<<< HEAD
 <img src="Resources/EE logo.png" alt="Edge Express Logo">
    Edge Express
+=======
+<img src="../Resources/EE logo.png" alt="Edge Express Logo">
+   Edge.Express
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
    
 </div>
 
@@ -66,7 +84,7 @@
 
 <div class="nav-btn">
 
-<a href="login.php">Login</a>
+ <a href="../User_management/profile.php">My profile</a>
 
 </div>
 
@@ -129,14 +147,22 @@
         <!-- Floating Burger -->
 
         <img
+<<<<<<< HEAD
             src="Resources/burger.png"
+=======
+            src="../Resources/burger.png"
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
             class="burger"
             alt="Burger">
 
         <!-- Floating Coffee -->
 
         <img
+<<<<<<< HEAD
             src="Resources/coffee1.png"
+=======
+            src="../Resources/coffee1.png"
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
             class="coffee"
             alt="Coffee">
 
@@ -209,7 +235,11 @@
 
         <div class="food-item">
 
+<<<<<<< HEAD
             <img src="Resources/burger1.png" alt="Burger">
+=======
+            <img src="../Resources/burger1.png" alt="Burger">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Chicken Burger</h3>
 
@@ -231,7 +261,11 @@
 
         <div class="food-item">
 
+<<<<<<< HEAD
             <img src="Resources/friedrice.png" alt="Fried Rice">
+=======
+            <img src="../Resources/friedrice.png" alt="Fried Rice">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Fried Rice</h3>
 
@@ -251,7 +285,11 @@
 
         <div class="food-item">
 
+<<<<<<< HEAD
             <img src="Resources/noodles.png" alt="Noodles">
+=======
+            <img src="../Resources/noodles.png" alt="Noodles">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Chicken Noodles</h3>
 
@@ -271,7 +309,11 @@
 
         <div class="food-item">
 
+<<<<<<< HEAD
             <img src="Resources/pizza.png" alt="Pizza">
+=======
+            <img src="../Resources/pizza.png" alt="Pizza">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Mini Pizza</h3>
 
@@ -368,7 +410,7 @@
 
     <div class="section-title">
 
-        <span>⭐ WHY EDGE EXPRESS</span>
+        <span>⭐ WHY EDGE.EXPRESS</span>
 
         <h2>Designed Around Student Life</h2>
 
@@ -400,7 +442,7 @@
 
             <h3>500+</h3>
 
-            <p>Happy Students</p>
+            <p>Happy Customers</p>
 
         </div>
 
@@ -433,16 +475,16 @@
 </section>
 
 <!-- =========================
-        STUDENT REVIEWS
+        CUSTOMER REVIEWS
 ========================= -->
 
 <section class="reviews">
 
     <div class="section-title">
 
-        <span>💬 STUDENT REVIEWS</span>
+        <span>💬 Customer REVIEWS</span>
 
-        <h2>What NSBM Students Say</h2>
+        <h2>What Our Customers Say</h2>
 
         <p>Built to save time and make every lecture break stress-free.</p>
 
@@ -518,7 +560,7 @@
 
 <footer>
 
-    <h2>Edge Express</h2>
+    <h2>Edge.Express</h2>
 
     <p>Fast. Fresh. Smart.</p>
 
@@ -534,7 +576,7 @@
 
     <p class="copyright">
 
-        © 2026 Edge Express. All Rights Reserved.
+        © 2026 Edge.Express. All Rights Reserved.
 
     </p>
 
@@ -543,11 +585,19 @@
 
 
 
+<<<<<<< HEAD
 <script src="Customer/js/app.js"></script>
 
 <script src="Customer/js/navbar.js"></script>
 
 <script src="Customer/js/animations.js"></script>
+=======
+<script src="../Customer/js/app.js"></script>
+
+<script src="../Customer/js/navbar.js"></script>
+
+<script src="../Customer/js/animations.js"></script>
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 <div class="cursor-glow"></div>
 
 

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Edge Express | Skip the Queue</title>
+    <title>Edge.Express | Skip the Queue</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,7 @@
 
     <!-- CSS -->
 
+<<<<<<< HEAD
     <link rel="stylesheet" href="Assets/css/style.css">
 
     <link rel="stylesheet" href="Assets/css/navbar.css">
@@ -32,6 +33,18 @@
     <link rel="stylesheet" href="Assets/css/animations.css">
 
     <link rel="stylesheet" href="Assets/css/responsive.css">
+=======
+    <link rel="stylesheet" href="../Assets/css/style.css">
+
+    <link rel="stylesheet" href="../Assets/css/navbar.css">
+
+    <link rel="stylesheet" href="../Assets/css/hero.css">
+    <link rel="stylesheet" href="../Assets/css/sections.css">
+
+    <link rel="stylesheet" href="../Assets/css/animations.css">
+
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
 </head>
 
@@ -44,8 +57,13 @@
 
 <div class="logo">
 
+<<<<<<< HEAD
 <img src="Resources/EE logo.jpg" alt="Edge Express Logo">
    Edge Express
+=======
+<img src="../Resources/EE logo.png" alt="Edge Express Logo">
+   Edge.Express
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
    
 </div>
 
@@ -66,7 +84,7 @@
 
 <div class="nav-btn">
 
-<a href="login.php">Login</a>
+ <a href="../User_management/profile.php">My profile</a>
 
 </div>
 
