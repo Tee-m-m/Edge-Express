@@ -170,12 +170,6 @@
 
             </small>
 
-            <a href="login.php">
-
-                🛒 Add to Cart
-
-            </a>
-
         </div>
 
     </div>
