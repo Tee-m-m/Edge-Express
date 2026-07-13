@@ -75,6 +75,7 @@ if ($conn->connect_error) {
 
  //$sql4_alter = "ALTER TABLE fooditems ADD COLUMN image VARCHAR(255)";
  //$conn->query($sql4_alter);
+
  // 5. CONTACT MESSAGES TABLE (For Customer Feedback Forms)
 // $sql5 = "CREATE TABLE IF NOT EXISTS contact_messages (
 //     message_id INT AUTO_INCREMENT PRIMARY KEY,
