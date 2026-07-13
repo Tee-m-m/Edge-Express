@@ -22,16 +22,16 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
 
-    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="Assets/css/navbar.css">
 
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="Assets/css/hero.css">
+    <link rel="stylesheet" href="Assets/css/sections.css">
 
-    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="Assets/css/animations.css">
 
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
 
 </head>
 
@@ -44,7 +44,7 @@
 
 <div class="logo">
 
-<img src="assets/images/logo/logo1.jpg" alt="Edge Express Logo">
+<img src="Resources/EE logo.png" alt="Edge Express Logo">
    Edge Express
    
 </div>
@@ -129,14 +129,14 @@
         <!-- Floating Burger -->
 
         <img
-            src="assets/images/products/burger.png"
+            src="Resources/burger.png"
             class="burger"
             alt="Burger">
 
         <!-- Floating Coffee -->
 
         <img
-            src="assets/images/products/coffee1.png"
+            src="Resources/coffee1.png"
             class="coffee"
             alt="Coffee">
 
@@ -209,7 +209,7 @@
 
         <div class="food-item">
 
-            <img src="assets/images/products/burger1.png" alt="Burger">
+            <img src="Resources/burger1.png" alt="Burger">
 
             <h3>Chicken Burger</h3>
 
@@ -231,7 +231,7 @@
 
         <div class="food-item">
 
-            <img src="assets/images/products/friedrice.png" alt="Fried Rice">
+            <img src="Resources/friedrice.png" alt="Fried Rice">
 
             <h3>Fried Rice</h3>
 
@@ -251,7 +251,7 @@
 
         <div class="food-item">
 
-            <img src="assets/images/products/noodles.png" alt="Noodles">
+            <img src="Resources/noodles.png" alt="Noodles">
 
             <h3>Chicken Noodles</h3>
 
@@ -271,7 +271,7 @@
 
         <div class="food-item">
 
-            <img src="assets/images/products/pizza.png" alt="Pizza">
+            <img src="Resources/pizza.png" alt="Pizza">
 
             <h3>Mini Pizza</h3>
 
@@ -510,7 +510,7 @@
         Pre-order your favourite meals and enjoy your break without waiting.
     </p>
 
-    <a href="#" class="primary-btn">
+    <a href="menu.php" class="primary-btn">
         Order Now
     </a>
 
@@ -524,11 +524,11 @@
 
     <div class="footer-links">
 
-        <a href="#">Home</a>
+        <a href="index.php">Home</a>
 
-        <a href="#">Menu</a>
+        <a href="menu.php">Menu</a>
 
-        <a href="#">Contact</a>
+        <a href="contact.php">Contact</a>
 
     </div>
 
@@ -543,11 +543,11 @@
 
 
 
-<script src="assets/js/app.js"></script>
+<script src="Customer/js/app.js"></script>
 
-<script src="assets/js/navbar.js"></script>
+<script src="Customer/js/navbar.js"></script>
 
-<script src="assets/js/animations.js"></script>
+<script src="Customer/js/animations.js"></script>
 <div class="cursor-glow"></div>
 
 

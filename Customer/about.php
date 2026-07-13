@@ -44,7 +44,7 @@
 
 <div class="logo">
 
-<img src="assets/images/logo/logo1.jpg" alt="Edge Express Logo">
+<img src="Resources/EE logo.png">
    Edge Express
    
 </div>
@@ -93,8 +93,7 @@
 
     <div class="story-image">
 
-          <img src="assets/images/logo/logo1.jpg"
-         alt="Edge Express Logo">
+          <img src="Resources/EE logo.png" alt="Edge Express Logo">
 
     </div>
 

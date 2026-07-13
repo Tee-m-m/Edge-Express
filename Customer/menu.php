@@ -20,12 +20,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/navbar.css">
+    <link rel="stylesheet" href="Assets/css/hero.css">
+    <link rel="stylesheet" href="Assets/css/sections.css">
+    <link rel="stylesheet" href="Assets/css/animations.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
 
 </head>
 
@@ -40,7 +40,7 @@
 
     <div class="logo">
 
-        <img src="assets/images/logo/logo1.jpg" alt="Edge Express Logo">
+        <img src="Resources/EE logo.png" alt="Edge Express Logo">
 
         Edge Express
 
@@ -142,7 +142,7 @@
 
             </div>
 
-            <img src="assets/images/products/burger1.png" alt="Burger">
+            <img src="Resources/burger1.png" alt="Burger">
 
             <h3>Chicken Burger</h3>
 
@@ -163,7 +163,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -187,7 +187,7 @@
 
             </div>
 
-            <img src="assets/images/products/friedrice.png" alt="Fried Rice">
+            <img src="Resources/friedrice.png" alt="Fried Rice">
 
             <h3>Fried Rice</h3>
 
@@ -207,7 +207,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -232,7 +232,7 @@
 
             </div>
 
-            <img src="assets/images/products/noodles.png" alt="Noodles">
+            <img src="Resources/noodles.png" alt="Noodles">
 
             <h3>Noodles</h3>
 
@@ -252,7 +252,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -276,7 +276,7 @@
 
             </div>
 
-            <img src="assets/images/products/rice.png" alt="Rice">
+            <img src="Resources/rice.png" alt="Rice">
 
             <h3>Rice</h3>
 
@@ -296,7 +296,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -319,7 +319,7 @@
 
             </div>
 
-            <img src="assets/images/products/pizza.png" alt="Pizza">
+            <img src="Resources/pizza.png" alt="Pizza">
 
             <h3>Pizza</h3>
 
@@ -339,7 +339,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -362,7 +362,7 @@
 
             </div>
 
-            <img src="assets/images/products/kottu.png" alt="Kottu">
+            <img src="Resources/kottu.png" alt="Kottu">
 
             <h3>Kottu</h3>
 
@@ -382,7 +382,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -404,7 +404,7 @@
 
             </div>
 
-            <img src="assets/images/products/biriyani.png" alt="Biriyani">
+            <img src="Resources/biriyani.png" alt="Biriyani">
 
             <h3>Biriyani</h3>
 
@@ -424,7 +424,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -446,7 +446,7 @@
 
             </div>
 
-            <img src="assets/images/products/iddi appa.png" alt="Iddi Appa">
+            <img src="Resources/iddi appa.png" alt="Iddi Appa">
 
             <h3>Iddi Appa</h3>
 
@@ -466,7 +466,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -490,7 +490,7 @@
 
             </div>
 
-            <img src="assets/images/products/icecoffee.png" alt="Ice Coffee">
+            <img src="Resources/icecoffee.png" alt="Ice Coffee">
 
             <h3>Ice Coffee</h3>
 
@@ -510,7 +510,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -531,7 +531,7 @@
 
             </div>
 
-            <img src="assets/images/products/mango.png" alt="Mango Smoothy">
+            <img src="Resources/mango.png" alt="Mango Smoothy">
 
             <h3>Mango Smoothy</h3>
 
@@ -551,7 +551,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -573,7 +573,7 @@
 
             </div>
 
-            <img src="assets/images/products/orange.png" alt="Orange Juice">
+            <img src="Resources/orange.png" alt="Orange Juice">
 
             <h3>Orange Juice</h3>
 
@@ -593,7 +593,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -614,7 +614,7 @@
 
             </div>
 
-            <img src="assets/images/products/mohito.png" alt="Mohito">
+            <img src="Resources/mohito.png" alt="Mohito">
 
             <h3>Mojito</h3>
 
@@ -634,7 +634,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -658,7 +658,7 @@
 
             </div>
 
-            <img src="assets/images/products/icecream.png" alt="Ice Cream">
+            <img src="Resources/icecream.png" alt="Ice Cream">
 
             <h3>Ice Cream</h3>
 
@@ -678,7 +678,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -701,7 +701,7 @@
 
             </div>
 
-            <img src="assets/images/products/Bpudding.png" alt="Pudding">
+            <img src="Resources/Bpudding.png" alt="Pudding">
 
             <h3>Biscuit Pudding</h3>
 
@@ -721,7 +721,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -744,7 +744,7 @@
 
             </div>
 
-            <img src="assets/images/products/cake.png" alt="Cake">
+            <img src="Resources/cake.png" alt="Cake">
 
             <h3>RedVelvet Cake</h3>
 
@@ -764,7 +764,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -787,7 +787,7 @@
 
             </div>
 
-            <img src="assets/images/products/Ccake.png" alt="Cup Cake">
+            <img src="Resources/Ccake.png" alt="Cup Cake">
 
             <h3>Cup Cake</h3>
 
@@ -807,7 +807,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php" class="cart-btn">
 
                     <i class="fas fa-cart-plus"></i>
 
@@ -825,13 +825,13 @@
 
 <!-- ================= JS ================= -->
 
-<script src="assets/js/app.js"></script>
+<script src="Customer/js/app.js"></script>
 
-<script src="assets/js/navbar.js"></script>
+<script src="Customer/js/navbar.js"></script>
 
-<script src="assets/js/animations.js"></script>
+<script src="Customer/js/animations.js"></script>
 
-<script src="assets/js/menu.js"></script>
+<script src="Customer/js/menu.js"></script>
 
 <div class="floating-cart">
 

@@ -20,12 +20,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/navbar.css">
+    <link rel="stylesheet" href="Assets/css/hero.css">
+    <link rel="stylesheet" href="Assets/css/sections.css">
+    <link rel="stylesheet" href="Assets/css/animations.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
 
 </head>
 
@@ -40,7 +40,7 @@
 
     <div class="logo">
 
-        <img src="assets/images/logo/logo1.jpg" alt="Edge Express Logo">
+        <img src="Resources/EE logo.png" alt="Edge Express Logo">
 
         Edge Express
 
@@ -72,7 +72,7 @@
 
     <div class="details-image">
 
-        <img src="assets/images/products/burger1.png" alt="Burger">
+        <img src="Resources/burger1.png" alt="Burger">
 
     </div>
 
@@ -144,7 +144,7 @@
 
     </div>
 
-    <a href="#" class="cart-btn">
+    <a href="cart.php" class="cart-btn">
 
         <i class="fas fa-cart-plus"></i>
 
@@ -166,7 +166,178 @@
 
     <div class="special-grid">
 
-        <!-- Copy any 3 food-item cards from menu.php here -->
+    <!--noodles -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.9</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="Resources/noodles.png" alt="Noodles">
+
+            <h3>Noodles</h3>
+
+            <p class="food-desc">
+                Freshly prepared noodles with vegetables and chicken.
+            </p>
+
+            <span class="price">Rs.200</span>
+
+            <small>⏱ Ready in 9 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=3" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="cart.php" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+        
+        <!--  Rice -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="Resources/rice.png" alt="Rice">
+
+            <h3>Rice</h3>
+
+            <p class="food-desc">
+                Freshly prepared fried rice with vegetables and spice.
+            </p>
+
+            <span class="price">Rs.150</span>
+
+            <small>⏱ Ready in 7 mins</small>
+
+            <div class="food-buttons">
+
+            <a href="menu-details.php?id=4" class="details-btn">   
+
+                    View
+
+                </a>
+
+                <a href="cart.php" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Pizza -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 5.0</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="Resources/pizza.png" alt="Pizza">
+
+            <h3>Pizza</h3>
+
+            <p class="food-desc">
+                Delicious pizza with various toppings and cheese.
+            </p>
+
+            <span class="price">Rs.250</span>
+
+            <small>⏱ Ready in 7 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=5" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="cart.php" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
+
+        <!--kottu  -->
+
+        <div class="food-item meal">
+
+            <div class="food-top">
+
+                <span class="rating">⭐ 4.8</span>
+
+                <i class="fa-regular fa-heart"></i>
+
+            </div>
+
+            <img src="Resources/kottu.png" alt="Kottu">
+
+            <h3>Kottu</h3>
+
+            <p class="food-desc">
+                Tasty kottu with fresh ingredients and special spices.
+            </p>
+
+            <span class="price">Rs.170</span>
+
+            <small>⏱ Ready in 9 mins</small>
+
+            <div class="food-buttons">
+
+                <a href="menu-details.php?id=6" class="details-btn">
+
+                    View
+
+                </a>
+
+                <a href="cart.php" class="cart-btn">
+
+                    <i class="fas fa-cart-plus"></i>
+
+                    Add
+
+                </a>
+
+            </div>
+        </div>
 
     </div>
 
