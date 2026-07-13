@@ -16,8 +16,8 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] != "admin"){
         <div class="admin-header">
             <img src="EE logo.png">
             <h1>ආයුබෝවන් | WELCOME</h1>
-            <h1>Admin Dashboard</h1>
             <h1><?php echo $_SESSION["user_name"]; ?>!</h1>
+            <h1>to the Admin Dashboard</h1>
             <?php
             if(isset($_GET['login']) && $_GET['login'] == 'success') { ?>
             <script>
