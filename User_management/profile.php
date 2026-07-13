@@ -88,7 +88,7 @@ $stmt->close();
                 <a href="changepw.php" class="btn btn-outline-primary rounded-pill"><i class="bi bi-key"></i> Change Password </a>
                 
                 <!-- FIXED: Added ../ to go up out of User_management if menu.php is in the root directory -->
-                <a href="../menu.php" class="btn btn-outline-dark rounded-pill"><i class="bi bi-arrow-left"></i> Back to Menu</a>
+                <a href="../Customer/menu.php" class="btn btn-outline-dark rounded-pill"><i class="bi bi-arrow-left"></i> Back to Menu</a>
                 <a href="../logout.php" class="btn btn-danger rounded-pill"><i class="bi bi-box-arrow-right"></i> Logout</a>
             </div>
         </div>
