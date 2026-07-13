@@ -1,156 +1,201 @@
-<?php
-// Shows the cart. Also handles adding, updating, and removing items.
+<!DOCTYPE html>
+<html lang="en">
 
-session_start();
-include '../config/edge_express.php';
-
-if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.html");
-    exit;
-}
-
-if (!isset($_SESSION['cart'])) {
-    $_SESSION['cart'] = array();
-}
-
-// ---- Add item to cart (menu.php sends food_id + quantity here) ----
-if (isset($_POST['action']) && $_POST['action']=="add") {
-
-    $food_id = intval($_POST['food_id']);
-    $quantity = intval($_POST['quantity']);
-
-    if ($quantity < 1) {
-        $quantity = 1;
-    }
-
-    if (isset($_SESSION['cart'][$food_id])) {
-        $_SESSION['cart'][$food_id] += $quantity;
-    } else {
-        $_SESSION['cart'][$food_id] = $quantity;
-    }
-
-    header("Location: ../Customer/menu.php");
-    exit();
-}
-
-// ---- Update quantities ----
-if (isset($_POST['action']) && $_POST['action'] == "update") {
-    foreach ($_POST['qty'] as $food_id => $qty) {
-        $food_id = intval($food_id);
-        $qty = intval($qty);
-        if ($qty <= 0) {
-            unset($_SESSION['cart'][$food_id]);
-        } else {
-            $_SESSION['cart'][$food_id] = $qty;
-        }
-    }
-}
-
-// ---- Remove single item ----
-if (isset($_GET['remove'])) {
-    $food_id = intval($_GET['remove']);
-    unset($_SESSION['cart'][$food_id]);
-    header("Location: cart.php");
-    exit;
-}
-// ---- Get cart items from database ----
-$cartItems = array();
-$grandTotal = 0;
-
-if (count($_SESSION['cart']) > 0) {
-    $ids = implode(",", array_map('intval', array_keys($_SESSION['cart'])));
-    $sql = "SELECT food_id, name, price, image FROM fooditems WHERE food_id IN ($ids)";
-    $result = $conn->query($sql);
-
-    while ($row = $result->fetch_assoc()) {
-        $qty = $_SESSION['cart'][$row['food_id']];
-        $subtotal = $qty * $row['price'];
-        $grandTotal = $grandTotal + $subtotal;
-
-        $row['quantity'] = $qty;
-        $row['subtotal'] = $subtotal;
-        $cartItems[] = $row;
-    }
-}
-?>
-<html>
 <head>
-    <title>Your Cart | Edge.Express</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edge.Express | Skip the Queue</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+
+    <link rel="stylesheet" href="../Assets/css/style.css">
+
+    <link rel="stylesheet" href="../Assets/css/navbar.css">
+
+    <link rel="stylesheet" href="../Assets/css/hero.css">
+    <link rel="stylesheet" href="../Assets/css/sections.css">
+
+    <link rel="stylesheet" href="../Assets/css/animations.css">
+
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
+
 </head>
+
 <body>
 
-    <div class="container py-5">
-        <h1 class="page-title">Your Cart</h1>
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
 
-        <?php if (count($cartItems) == 0) { ?>
-        <p class="page-subtitle">Your cart is empty.</p>
-        <a href="../index.php" class="btn btn-premium-login">Back to Menu</a>
+<nav class="navbar">
 
-        <?php } else { ?>
+<div class="logo">
 
-        <form method="post" action="cart.php">
-            <input type="hidden" name="action" value="update">
+<img src="../Resources/EE logo.png" alt="Edge Express Logo">
+   Edge Express
 
-            <table class="table table-bordered bg-white">
-                <tr>
-                    <th>Item</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Subtotal</th>
-                    <th></th>
-                </tr><?php foreach ($cartItems as $item) { ?>
-                    <tr>
-                        <td>
-                            <img src="../Resources/<?php echo htmlspecialchars($item['image']); ?>" width="50" style="margin-right:10px;">
-                        <?php echo htmlspecialchars($item['name']); ?>
-                        </td>
-                        <td>Rs. <?php echo number_format($item['price'], 2); ?></td>
-                        <td>
-                            <input type="number" name="qty[<?php echo $item['food_id']; ?>]"
-                            value="<?php echo $item['quantity']; ?>" min="0" max="20" class="form-control" style="width:80px;">
-                        </td>
-                        <td>Rs. <?php echo number_format($item['subtotal'], 2); ?></td>
-                        <td><a href="cart.php?remove=<?php echo $item['food_id']; ?>" class="remove-link">Remove</a></td>
-                    </tr>
-                <?php } ?>
-                </table>
-
-            <p class="fs-4"><strong>Grand Total: Rs. <?php echo number_format($grandTotal, 2); ?></strong></p>
-
-            <button type="submit" class="btn btn-secondary">Update Cart</button>
-        </form>
-
-    <br>
-    <a href="pickup.php" class="btn btn-premium-login">Proceed to Pickup Time</a>
-
-    <?php } ?>
 </div>
 
-<a href="cart.php" class="floating-cart-btn" style="position: fixed; bottom: 30px; right: 30px; text-decoration: none; z-index: 999;">
-    <div style="background: #00ADB5; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative;">
-        <i class="fas fa-shopping-cart" style="font-size: 24px;"></i>
-        
-        <!-- Only display the red badge if there are items inside the cart memory -->
-        <?php if ($total_items > 0) { ?>
-            <span style="position: absolute; top: -5px; right: -5px; background: #ff4757; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold;">
-                <?php echo $total_items; ?>
-            </span>
-        <?php } ?>
-    </div>
+<ul>
+
+<li><a href="index.php" class="active">Home</a></li>
+
+<li><a href="menu.php">Menu</a></li>
+
+<li><a href="about.php">About</a></li>
+
+<li><a href="contact.php">Contact</a></li>
+
+</ul>
+
+<div class="nav-btn">
+
+ <a href="../User_management/profile.php">My profile</a>
+
+</div>
+
+</nav>
+
+<section class="cart-hero">
+
+<span>🛒 EDGE EXPRESS</span>
+
+<h1>Your Shopping Cart</h1>
+
+<p>
+
+Review your selected meals before checkout.
+
+</p>
+
+</section>
+
+<section class="cart-container">
+
+<div class="cart-left">
+
+<!-- Food cards here -->
+
+</div>
+
+<div class="cart-right">
+
+<!-- Summary here -->
+
+</div>
+
+</section>
+
+<div class="cart-card">
+
+<img src="../Resources/burger1.png">
+
+<div class="cart-info">
+
+<h2>Chicken Burger</h2>
+
+<p>
+
+Fresh grilled chicken with cheese.
+
+</p>
+
+<span>
+
+⏱ Ready in 7 mins
+
+</span>
+
+</div>
+
+<div class="cart-controls">
+
+<h3>Rs.650</h3>
+
+<div class="quantity">
+
+<button>-</button>
+
+<input type="number" value="1">
+
+<button>+</button>
+
+</div>
+
+<button class="remove-btn">
+
+<i class="fas fa-trash"></i>
+
+Remove
+
+</button>
+
+</div>
+
+</div>
+<div class="summary-card">
+
+<h2>Order Summary</h2>
+
+<div class="summary-row">
+
+<span>Items</span>
+
+<span>1</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Subtotal</span>
+
+<span>Rs.650</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Pickup</span>
+
+<span>FREE</span>
+
+</div>
+
+<hr>
+
+<div class="summary-total">
+
+<span>Total</span>
+
+<strong>Rs.650</strong>
+
+</div>
+
+<a href="pickup.php" class="checkout-btn">
+
+Proceed to Pickup
+
+<i class="fas fa-arrow-right"></i>
+
 </a>
 
-
-<script>
-var removeLinks = document.querySelectorAll(".remove-link");
-for (var i = 0; i < removeLinks.length; i++) {
-    removeLinks[i].addEventListener("click", function(e) {
-        var confirmed = confirm("Remove this item?");
-        if (!confirmed) {
-            e.preventDefault();
-        }
-    });
-}
-</script>
+</div>
+<script src="../Customer/js/cart.js"></script>
 
 </body>
+
 </html>
