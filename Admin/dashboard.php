@@ -14,7 +14,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] != "admin"){
     </head>
     <body>
         <div class="admin-header">
-            <img src="EE logo.png">
+            <img src="../Resources/EE logo.png">
             <h1>ආයුබෝවන් | WELCOME</h1>
             <h1><?php echo $_SESSION["user_name"]; ?>!</h1>
             <h1>to the Admin Dashboard</h1>

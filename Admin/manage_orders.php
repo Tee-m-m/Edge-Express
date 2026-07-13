@@ -43,7 +43,7 @@ $result_orders = $conn->query($sql_orders);
     </head>
     <body>
         <div class="manage-orders">
-            <img src="EE logo.png">
+            <img src="../Resources/EE logo.png">
             <h1>Manage Orders</h1>
             <a href="dashboard.php">Back to Dashboard</a>
 
