@@ -114,24 +114,6 @@ foreach ($food_items as $rel_id => $rel_item) {
     </ul>
 </section>
 
-<section class="quantity-section">
-    <h2>Quantity</h2>
-    <div class="quantity-box">
-        <button>-</button>
-        <span>1</span>
-        <button>+</button>
-    </div>
-
-    <form action="../Customer/cart.php" method="POST">
-        <input type="hidden" name="action" value="add">
-        <input type="hidden" name="food_id" value="<?php echo $id; ?>">
-        <input type="hidden" name="quantity" value="1">
-        <button type="submit" class="cart-btn">
-            <i class="fas fa-cart-plus"></i> Add to Cart
-        </button>
-    </form>
-</section>
-
 <section class="related-food">
     <div class="section-title">
         <span>YOU MAY ALSO LIKE</span>
