@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $_SESSION['user_name'] = $user['full_name'];
                 $_SESSION['role'] = $user['role']; // Stores 'student' or 'staff'
 
-                header("Location: Customer/menu.php");
+                header("Location: Customer/index.php");
                 exit();
             }
         }

@@ -55,7 +55,7 @@
     </ul>
 
     <div class="nav-btn">
-        <a href="../login.html">Login</a>
+        <a href="../User_management/profile.php">My profile</a>
     </div>
 
 </nav>
