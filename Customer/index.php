@@ -44,7 +44,7 @@
 
 <div class="logo">
 
-<img src="..Resources/EE logo.png" alt="Edge Express Logo">
+<img src="../Resources/EE logo.png" alt="Edge Express Logo">
    Edge.Express
    
 </div>
