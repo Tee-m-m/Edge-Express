@@ -133,11 +133,10 @@
                      View
                 </a>
 
-                <a href="#" class="cart-btn">
-                    <i class="fas fa-cart-plus"></i>
-                    Add
+                <!-- Use this exact syntax for your Add buttons on menu.php -->
+                <a href="cart.php?action=add&id=1" class="cart-btn">
+                <i class="fas fa-cart-plus"></i> Add
                 </a>
-
             </div>
 
         </div>
