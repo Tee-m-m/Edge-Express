@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION["admin_id"])) {
+if (!isset($_SESSION["user_id"]) || $_SESSION["role"] != "admin"){
     header("Location: ../login.php");
     exit;
 }
@@ -17,7 +17,7 @@ if (!isset($_SESSION["admin_id"])) {
             <img src="EE logo.png">
             <h1>ආයුබෝවන් | WELCOME</h1>
             <h1>Admin Dashboard</h1>
-            <h1><?php echo $_SESSION["admin_username"]; ?>!</h1>
+            <h1><?php echo $_SESSION["user_name"]; ?>!</h1>
             <?php
             if(isset($_GET['login']) && $_GET['login'] == 'success') { ?>
             <script>
