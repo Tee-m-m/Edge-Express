@@ -1,0 +1,196 @@
+/* ==========================================
+   EDGE EXPRESS - NAVIGATION BAR
+========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    max-width:1350px;
+
+    padding:18px 45px;
+
+    display:flex !important;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px); ;
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    z-index:1000;
+
+    transition:.4s ease;
+
+}
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    color:white;
+
+    letter-spacing:.5px;
+
+}
+.logo img{
+    width:55px;
+
+    height:55px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+}
+
+.logo i{
+
+    color:#27D5FF;
+
+    font-size:1.4rem;
+
+}
+
+/* Navigation Menu */
+
+.navbar ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.navbar ul li{
+
+    position:relative;
+
+}
+
+.navbar ul li a{
+
+    color:white;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+/* Hover Effect */
+
+.navbar ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#27D5FF;
+
+    transition:.35s;
+
+}
+
+.navbar ul li:hover a{
+
+    color:#27D5FF;
+
+}
+
+.navbar ul li:hover a::after{
+
+    width:100%;
+
+}
+
+/* Login Button */
+
+.nav-btn a{
+
+    padding:12px 28px;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#27D5FF,#00C2A8);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.4s;
+
+    box-shadow:0 0 25px rgba(39,213,255,.35);
+
+}
+
+.nav-btn a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 35px rgba(39,213,255,.55);
+
+}
+
+/* Navbar on Scroll */
+
+.navbar.scrolled{
+
+    background:rgba(8,17,32,.85);
+
+    backdrop-filter:blur(30px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* Active Navigation Link */
+
+.navbar ul li a.active{
+
+    color:#23D5FF;
+
+    font-weight:600;
+
+}
+
+.navbar ul li a:hover{
+
+    color:#23D5FF;
+
+}

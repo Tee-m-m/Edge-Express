@@ -1,0 +1,49 @@
+@keyframes floatingFood{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+.food-item img{
+
+animation:floatingFood 5s ease-in-out infinite;
+
+}
+
+/*==========================
+      SCROLL ANIMATION
+===========================*/
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:all .9s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

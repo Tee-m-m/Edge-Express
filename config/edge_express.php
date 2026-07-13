@@ -73,7 +73,12 @@ if ($conn->connect_error) {
 //     echo "Error: " . $conn->error . "<br>";
 // }
 
+<<<<<<< HEAD
 // $sql4_alter = "ALTER TABLE fooditems ADD COLUMN image VARCHAR(255)";
 // $conn->query($sql4_alter);
+=======
+$sql4_alter = "ALTER TABLE fooditems ADD COLUMN image VARCHAR(255)";
+$conn->query($sql4_alter);
+>>>>>>> d0db55dbbe4e65587c1d9187abc701ff26a699a9
 
 ?>
