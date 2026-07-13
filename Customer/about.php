@@ -44,28 +44,20 @@
 
 <div class="logo">
 
-<<<<<<< HEAD
-<img src="Resources/EE logo.png">
-   Edge Express
-=======
 <img src="../Resources/EE logo.png" alt="Edge Express Logo">
    Edge.Express
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
-   
-</div>
-
 
 </div>
 
 <ul>
 
-<li><a href="index.php" >Home</a></li>
+<li><a href="index.php">Home</a></li>
 
-<li><a href="menu.php" >Menu</a></li>
+<li><a href="menu.php">Menu</a></li>
 
-<li><a href="about.php"class ="active" >About</a></li>
+<li><a href="about.php" class="active">About</a></li>
 
-<li><a href="contact.php" >Contact</a></li>
+<li><a href="contact.php">Contact</a></li>
 
 </ul>
 
@@ -98,12 +90,7 @@
 
     <div class="story-image">
 
-<<<<<<< HEAD
-          <img src="Resources/EE logo.png" alt="Edge Express Logo">
-=======
-          <img src="../Resources/EE logo.png"
-         alt="Edge Express Logo">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
+          <img src="../Resources/EE logo.png" alt="Edge Express Logo">
 
     </div>
 

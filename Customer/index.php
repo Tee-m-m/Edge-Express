@@ -22,7 +22,7 @@
 
     <!-- CSS -->
 
-<<<<<<< HEAD
+
     <link rel="stylesheet" href="Assets/css/style.css">
 
     <link rel="stylesheet" href="Assets/css/navbar.css">
@@ -33,18 +33,6 @@
     <link rel="stylesheet" href="Assets/css/animations.css">
 
     <link rel="stylesheet" href="Assets/css/responsive.css">
-=======
-    <link rel="stylesheet" href="../Assets/css/style.css">
-
-    <link rel="stylesheet" href="../Assets/css/navbar.css">
-
-    <link rel="stylesheet" href="../Assets/css/hero.css">
-    <link rel="stylesheet" href="../Assets/css/sections.css">
-
-    <link rel="stylesheet" href="../Assets/css/animations.css">
-
-    <link rel="stylesheet" href="../Assets/css/responsive.css">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
 </head>
 
@@ -57,28 +45,20 @@
 
 <div class="logo">
 
-<<<<<<< HEAD
-<img src="Resources/EE logo.png" alt="Edge Express Logo">
-   Edge Express
-=======
 <img src="../Resources/EE logo.png" alt="Edge Express Logo">
-   Edge.Express
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
-   
-</div>
-
+   Edge Express
 
 </div>
 
 <ul>
 
-<li><a href="index.php" class ="active">Home</a></li>
+<li><a href="index.php" class="active">Home</a></li>
 
-<li><a href="menu.php" >Menu</a></li>
+<li><a href="menu.php">Menu</a></li>
 
-<li><a href="about.php" >About</a></li>
+<li><a href="about.php">About</a></li>
 
-<li><a href="contact.php" >Contact</a></li>
+<li><a href="contact.php">Contact</a></li>
 
 </ul>
 
@@ -89,8 +69,6 @@
 </div>
 
 </nav>
-
-
 
 
 
@@ -147,22 +125,14 @@
         <!-- Floating Burger -->
 
         <img
-<<<<<<< HEAD
-            src="Resources/burger.png"
-=======
             src="../Resources/burger.png"
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
             class="burger"
             alt="Burger">
 
         <!-- Floating Coffee -->
 
         <img
-<<<<<<< HEAD
-            src="Resources/coffee1.png"
-=======
             src="../Resources/coffee1.png"
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
             class="coffee"
             alt="Coffee">
 
@@ -235,11 +205,7 @@
 
         <div class="food-item">
 
-<<<<<<< HEAD
-            <img src="Resources/burger1.png" alt="Burger">
-=======
             <img src="../Resources/burger1.png" alt="Burger">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Chicken Burger</h3>
 
@@ -261,11 +227,7 @@
 
         <div class="food-item">
 
-<<<<<<< HEAD
-            <img src="Resources/friedrice.png" alt="Fried Rice">
-=======
             <img src="../Resources/friedrice.png" alt="Fried Rice">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Fried Rice</h3>
 
@@ -285,11 +247,7 @@
 
         <div class="food-item">
 
-<<<<<<< HEAD
-            <img src="Resources/noodles.png" alt="Noodles">
-=======
             <img src="../Resources/noodles.png" alt="Noodles">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Chicken Noodles</h3>
 
@@ -309,11 +267,7 @@
 
         <div class="food-item">
 
-<<<<<<< HEAD
-            <img src="Resources/pizza.png" alt="Pizza">
-=======
             <img src="../Resources/pizza.png" alt="Pizza">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
             <h3>Mini Pizza</h3>
 
@@ -584,20 +538,11 @@
 
 
 
-
-<<<<<<< HEAD
-<script src="Customer/js/app.js"></script>
-
-<script src="Customer/js/navbar.js"></script>
-
-<script src="Customer/js/animations.js"></script>
-=======
 <script src="../Customer/js/app.js"></script>
 
 <script src="../Customer/js/navbar.js"></script>
 
 <script src="../Customer/js/animations.js"></script>
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 <div class="cursor-glow"></div>
 
 

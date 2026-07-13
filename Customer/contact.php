@@ -22,18 +22,6 @@
 
     <!-- CSS -->
 
-<<<<<<< HEAD
-    <link rel="stylesheet" href="Assets/css/style.css">
-
-    <link rel="stylesheet" href="Assets/css/navbar.css">
-
-    <link rel="stylesheet" href="Assets/css/hero.css">
-    <link rel="stylesheet" href="Assets/css/sections.css">
-
-    <link rel="stylesheet" href="Assets/css/animations.css">
-
-    <link rel="stylesheet" href="Assets/css/responsive.css">
-=======
     <link rel="stylesheet" href="../Assets/css/style.css">
 
     <link rel="stylesheet" href="../Assets/css/navbar.css">
@@ -44,7 +32,6 @@
     <link rel="stylesheet" href="../Assets/css/animations.css">
 
     <link rel="stylesheet" href="../Assets/css/responsive.css">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
 </head>
 
@@ -57,16 +44,8 @@
 
 <div class="logo">
 
-<<<<<<< HEAD
-<img src="Resources/EE logo.jpg" alt="Edge Express Logo">
-   Edge Express
-=======
 <img src="../Resources/EE logo.png" alt="Edge Express Logo">
    Edge.Express
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
-   
-</div>
-
 
 </div>
 
@@ -74,11 +53,11 @@
 
 <li><a href="index.php">Home</a></li>
 
-<li><a href="menu.php" >Menu</a></li>
+<li><a href="menu.php">Menu</a></li>
 
-<li><a href="about.php" >About</a></li>
+<li><a href="about.php">About</a></li>
 
-<li><a href="contact.php"  class ="active">Contact</a></li>
+<li><a href="contact.php" class="active">Contact</a></li>
 
 </ul>
 

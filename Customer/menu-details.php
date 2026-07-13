@@ -20,21 +20,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- CSS -->
-<<<<<<< HEAD
-    <link rel="stylesheet" href="Assets/css/style.css">
-    <link rel="stylesheet" href="Assets/css/navbar.css">
-    <link rel="stylesheet" href="Assets/css/hero.css">
-    <link rel="stylesheet" href="Assets/css/sections.css">
-    <link rel="stylesheet" href="Assets/css/animations.css">
-    <link rel="stylesheet" href="Assets/css/responsive.css">
-=======
     <link rel="stylesheet" href="../Assets/css/style.css">
     <link rel="stylesheet" href="../Assets/css/navbar.css">
     <link rel="stylesheet" href="../Assets/css/hero.css">
     <link rel="stylesheet" href="../Assets/css/sections.css">
     <link rel="stylesheet" href="../Assets/css/animations.css">
     <link rel="stylesheet" href="../Assets/css/responsive.css">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
 </head>
 
@@ -49,11 +40,7 @@
 
     <div class="logo">
 
-<<<<<<< HEAD
-        <img src="Resources/EE logo.png" alt="Edge Express Logo">
-=======
         <img src="../Resources/EE logo.png" alt="Edge Express Logo">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
         Edge.Express
 
@@ -85,11 +72,7 @@
 
     <div class="details-image">
 
-<<<<<<< HEAD
-        <img src="Resources/burger1.png" alt="Burger">
-=======
         <img src="../Resources/burger1.png" alt="Burger">
->>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
     </div>
 
@@ -195,7 +178,7 @@
 
             </div>
 
-            <img src="Resources/noodles.png" alt="Noodles">
+            <img src="../Resources/noodles.png" alt="Noodles">
 
             <h3>Noodles</h3>
 
@@ -239,7 +222,7 @@
 
             </div>
 
-            <img src="Resources/rice.png" alt="Rice">
+            <img src="../Resources/rice.png" alt="Rice">
 
             <h3>Rice</h3>
 
@@ -282,7 +265,7 @@
 
             </div>
 
-            <img src="Resources/pizza.png" alt="Pizza">
+            <img src="../Resources/pizza.png" alt="Pizza">
 
             <h3>Pizza</h3>
 
@@ -325,7 +308,7 @@
 
             </div>
 
-            <img src="Resources/kottu.png" alt="Kottu">
+            <img src="../Resources/kottu.png" alt="Kottu">
 
             <h3>Kottu</h3>
 
