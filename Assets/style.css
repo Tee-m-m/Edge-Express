@@ -55,8 +55,12 @@ body::after{
     align-items: center;
     justify-content: center;
     padding: 25px;
+<<<<<<< HEAD
+    margin-top: 110px !important;
+=======
     position: relative;
     z-index: 5;
+>>>>>>> c4495cb16bddb9f1daa61c513c65ae929ca10552
 }
 
 .auth-card{

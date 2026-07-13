@@ -1,11 +1,11 @@
 <?php
-// edit-profile.php
+// edit-profile.php (Located inside Edge-Express/User_management/ folder)
 session_start();
-include 'config/edge_express.php';
+include '../config/edge_express.php';
 
 // Route protection shield
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: ../login.html"); // FIXED: Point to login.html instead of raw .php
     exit();
 }
 
@@ -19,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $new_faculty = trim($_POST['faculty']);
 
     if (!empty($new_name)) {
-        // Execute the profile update statement
-        $update_stmt = $conn->prepare("UPDATE students SET full_name = ?, phone_number = ?, faculty = ? WHERE student_id = ?");
+        // FIXED: Changed table to 'users' and target parameter column to 'user_id'
+        $update_stmt = $conn->prepare("UPDATE users SET full_name = ?, phone_number = ?, faculty = ? WHERE user_id = ?");
         $update_stmt->bind_param("sssi", $new_name, $new_phone, $new_faculty, $user_id);
         
         if ($update_stmt->execute()) {
@@ -37,7 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 // B. FETCH CURRENT DATA VALUES TO POPULATE THE CHOSEN BOX FIELDS
-$stmt = $conn->prepare("SELECT full_name, email, phone_number, faculty FROM students WHERE student_id = ?");
+// FIXED: Changed table to 'users' and identifier column to 'user_id'
+$stmt = $conn->prepare("SELECT full_name, email, phone_number, faculty FROM users WHERE user_id = ?");
 $stmt->bind_param("i", $user_id);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -54,37 +55,28 @@ $stmt->close();
     <!-- Bootstrap CDN Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="../Assets/style.css">
 </head>
 <body>
     <div class="auth-wrapper">
         <div class="auth-card">
             <div class="text-center mb-4">
-
-<i class="bi bi-pencil-square profile-icon"></i>
-
-<h2 class="page-title">Edit Profile</h2>
-
-<p class="page-subtitle">
-
-Update your personal information
-
-</p>
-
-</div>
+                <i class="bi bi-pencil-square profile-icon fs-1 text-primary"></i>
+                <h2 class="page-title">Edit Profile</h2>
+                <p class="page-subtitle">Update your personal information</p>
+            </div>
             
             <?php echo $message; ?>
 
             <form name="form4" method="POST" action="edit-profile.php" onsubmit="return validateEdit()">
                 <div class="mb-3">
                     <label class="form-label">Full Name</label>
-                    <input type="text" class="form-control" name="full_name" value="<?php echo htmlspecialchars($user['full_name']); ?>">
+                    <input type="text" class="form-control" name="full_name" value="<?php echo htmlspecialchars($user['full_name'] ?? ''); ?>">
                 </div>
                 
                 <div class="mb-3">
                     <label class="form-label">Email Address (Read-Only)</label>
-                    <!-- Email is usually kept read-only to preserve system index keys -->
-                    <input type="email" class="form-control bg-light" value="<?php echo htmlspecialchars($user['email']); ?>" readonly>
+                    <input type="email" class="form-control bg-light" value="<?php echo htmlspecialchars($user['email'] ?? ''); ?>" readonly>
                 </div>
 
                 <div class="mb-3">
@@ -98,29 +90,18 @@ Update your personal information
                 </div>
 
                 <div class="d-grid gap-3 mt-4">
-
-<button class="btn btn-primary rounded-pill">
-
-<i class="bi bi-check-circle"></i>
-
-Save Changes
-
-</button>
-
-<a href="profile.php"
-class="btn btn-outline-secondary rounded-pill">
-
-Cancel
-
-</a>
-
-</div>
+                    <button type="submit" class="btn btn-primary rounded-pill">
+                        <i class="bi bi-check-circle"></i> Save Changes
+                    </button>
+                    <a href="profile.php" class="btn btn-outline-secondary rounded-pill">Cancel</a>
+                </div>
             </form>
         </div>
     </div>
 
     <!-- Client-Side Form Constraint Checkers -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
         function validateEdit() {
             if (document.form4.full_name.value.trim().length == 0) {
                 alert("Your Full Name is a required record tracking element!");

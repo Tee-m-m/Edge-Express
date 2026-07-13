@@ -1,7 +1,7 @@
 <?php
 // changepw.php
 session_start();
-include 'config/edge_express.php';
+include '../config/edge_express.php';
 
 if (!isset($_SESSION['user_id'])) {
     header("Location:../login.html");
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Change Password</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="../Assets/style.css">
 </head>
 <body>
     <div class="auth-wrapper">
@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div class="mb-3">
                     <label class="form-label">New Password</label>
-                    <input type="password" class="form-control" name="new_password" placeholder="Minimum 8 characters">
+                    <input type="password" class="form-control" name="new_password" placeholder="">
                 </div>
                 <button type="submit" class="btn btn-danger w-100 mb-3">Update Password</button>
                 <a href="profile.php" class="btn btn-outline-secondary w-100">Cancel & Return</a>
@@ -88,8 +88,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 alert("All password fields are required!");
                 return false;
             }
-            if(document.form3.new_password.value.length < 8) {
-                alert("New password should contain a minimum of 8 characters!");
+            if(document.form3.new_password.value.length == 0) {
+                alert("Password Required!");
                 return false;
             }
             return true;
