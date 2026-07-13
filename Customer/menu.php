@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../login.html");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -134,9 +141,7 @@
                 </a>
 
                 <!-- Use this exact syntax for your Add buttons on menu.php -->
-                <a href="cart.php?action=add&id=1" class="cart-btn">
-                <i class="fas fa-cart-plus"></i> Add
-                </a>
+                <a href="cart.php?action=add&id=1" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
             </div>
 
         </div>
@@ -173,13 +178,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
+                <a href="cart.php?action=add&id=2" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
 
             </div>
 
@@ -218,13 +217,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
+                <a href="cart.php?action=add&id=3" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
 
             </div>
         </div>
@@ -262,13 +255,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
+                <a href="cart.php?action=add&id=4" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
 
             </div>
         </div>
@@ -305,13 +292,8 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
+                <a href="cart.php?action=add&id=5" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
 
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
 
             </div>
         </div>
@@ -348,13 +330,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
+                <a href="cart.php?action=add&id=6" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
 
             </div>
         </div>
@@ -390,13 +366,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
+                <a href="cart.php?action=add&id=7" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
 
             </div>
         </div>
@@ -432,13 +402,7 @@
 
                 </a>
 
-                <a href="#" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
+                <a href="cart.php?action=add&id=8" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
 
             </div>
         </div>

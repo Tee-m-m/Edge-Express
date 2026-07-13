@@ -122,6 +122,20 @@ if (count($_SESSION['cart']) > 0) {
     <?php } ?>
 </div>
 
+<a href="cart.php" class="floating-cart-btn" style="position: fixed; bottom: 30px; right: 30px; text-decoration: none; z-index: 999;">
+    <div style="background: #00ADB5; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative;">
+        <i class="fas fa-shopping-cart" style="font-size: 24px;"></i>
+        
+        <!-- Only display the red badge if there are items inside the cart memory -->
+        <?php if ($total_items > 0) { ?>
+            <span style="position: absolute; top: -5px; right: -5px; background: #ff4757; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold;">
+                <?php echo $total_items; ?>
+            </span>
+        <?php } ?>
+    </div>
+</a>
+
+
 <script>
 var removeLinks = document.querySelectorAll(".remove-link");
 for (var i = 0; i < removeLinks.length; i++) {
