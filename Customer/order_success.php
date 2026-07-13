@@ -31,7 +31,7 @@ $itemResult = $conn->query($itemSql);
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Order Confirmed | Edge Express</title>
+<title>Order Confirmed | Edge.Express</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../Assets/style.css">
 </head>

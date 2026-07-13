@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Edge Express | Menu</title>
+    <title>Edge.Express | Menu</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +20,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/navbar.css">
+    <link rel="stylesheet" href="Assets/css/hero.css">
+    <link rel="stylesheet" href="Assets/css/sections.css">
+    <link rel="stylesheet" href="Assets/css/animations.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
 
 </head>
 
@@ -40,9 +40,9 @@
 
     <div class="logo">
 
-        <img src="assets/images/logo/logo1.jpg" alt="Edge Express Logo">
+        <img src="../Resources/EE logo.png" alt="Edge Express Logo">
 
-        Edge Express
+        Edge.Express
 
     </div>
 
@@ -72,7 +72,7 @@
 
     <div class="details-image">
 
-        <img src="assets/images/products/burger1.png" alt="Burger">
+        <img src="../Resources/burger1.png" alt="Burger">
 
     </div>
 

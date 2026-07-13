@@ -71,7 +71,7 @@ if (count($_SESSION['cart']) > 0) {
 ?>
 <html>
 <head>
-    <title>Your Cart | Edge Express</title>
+    <title>Your Cart | Edge.Express</title>
 </head>
 <body>
 
