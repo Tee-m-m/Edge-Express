@@ -44,8 +44,13 @@
 
 <div class="logo">
 
+<<<<<<< HEAD
+<img src="Resources/EE logo.png">
+   Edge Express
+=======
 <img src="../Resources/EE logo.png" alt="Edge Express Logo">
    Edge.Express
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
    
 </div>
 
@@ -93,8 +98,12 @@
 
     <div class="story-image">
 
+<<<<<<< HEAD
+          <img src="Resources/EE logo.png" alt="Edge Express Logo">
+=======
           <img src="../Resources/EE logo.png"
          alt="Edge Express Logo">
+>>>>>>> 1757b61c50a2fd2858198c84f78b78de9f8b1f54
 
     </div>
 
