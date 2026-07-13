@@ -111,7 +111,6 @@ foreach ($_SESSION['cart'] as $food_id => $qty) {
 <div class="background-blur blur2"></div>
 
 <nav class="navbar">
-<<<<<<< HEAD
     <div class="logo">
         <img src="../Resources/EE logo.png" alt="Edge Express Logo">
         Edge Express
@@ -125,34 +124,6 @@ foreach ($_SESSION['cart'] as $food_id => $qty) {
     <div class="nav-btn">
         <a href="../User_management/profile.php">My profile</a>
     </div>
-=======
-
-<div class="logo">
-
-<img src="../Resources/EE logo.png" alt="Edge Express Logo">
-   Edge Express
-
-</div>
-
-<ul>
-
-<li><a href="index.php" >Home</a></li>
-
-<li><a href="menu.php"class="active">Menu</a></li>
-
-<li><a href="about.php">About</a></li>
-
-<li><a href="contact.php">Contact</a></li>
-
-</ul>
-
-<div class="nav-btn">
-
- <a href="../User_management/profile.php">My profile</a>
-
-</div>
-
->>>>>>> d3e048dc17e222741738ad1a41e7ac602d3505e9
 </nav>
 
 <section class="cart-hero">
