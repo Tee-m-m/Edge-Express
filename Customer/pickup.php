@@ -17,15 +17,23 @@ if (count($_SESSION['cart']) == 0) {
 $error = "";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
+
     $pickup_time = $_POST['pickup_time'];
 
     if ($pickup_time == "") {
+
         $error = "Please choose a pickup time.";
+
     } else {
+
         $_SESSION['pickup_time'] = date("Y-m-d") . " " . $pickup_time . ":00";
-        header("Location: checkout.php");
+
+        header("Location: order-success.php");
+
         exit;
+
     }
+
 }
 
 // Simple list of time slots (canteen open 8 AM - 6 PM)
@@ -35,13 +43,76 @@ for ($hour = 8; $hour <= 17; $hour++) {
     $slots[] = str_pad($hour, 2, "0", STR_PAD_LEFT) . ":30";
 }
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Pickup Time | Edge.Express</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edge.Express | Pickup Time</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../Assets/css/cart.css">
+    <link rel="stylesheet" href="../Assets/css/navbar.css">
+    <link rel="stylesheet" href="../Assets/css/hero.css">
+    <link rel="stylesheet" href="../Assets/css/sections.css">
+    <link rel="stylesheet" href="../Assets/css/animations.css">
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
+    <link rel="stylesheet" href="../Assets/css/pickup.css">
+
 </head>
+
 <body>
 
-    <div class="container py-5">
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <img src="../Resources/EE logo.png" alt="Edge Express Logo">
+        Edge Express
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.php">Home</a></li>
+        <li><a href="menu.php">Menu</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="contact.php">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-btn">
+        <a href="../User_management/profile.php">My profile</a>
+    </div>
+
+</nav>
+
+<div class="auth-wrapper">
+
+    <div class="auth-card">
+
+    <div class="pickup-icon">
+    <i class="fas fa-clock"></i>
+</div>
+
         <h1 class="page-title">Choose a Pickup Time</h1>
         <p class="page-subtitle">Canteen hours: 8:00 AM - 6:00 PM</p>
 
@@ -49,18 +120,25 @@ for ($hour = 8; $hour <= 17; $hour++) {
             <div class="alert alert-danger"><?php echo $error; ?></div>
         <?php } ?>
 
-        <form method="post" action="pickup.php" class="w-auto" style="max-width:300px;">
+        <form method="post" action="pickup.php">
+
             <select name="pickup_time" class="form-control mb-3" required>
                 <option value="">-- Select a time --</option>
             <?php foreach ($slots as $slot) { ?>
                 <option value="<?php echo $slot; ?>"><?php echo $slot; ?></option>
             <?php } ?>
             </select>
-            <button type="submit" class="btn btn-premium-login w-100">Continue to Checkout</button>
+
+            <button type="submit" class="btn-premium-login w-100">Continue to Checkout</button>
+
         </form>
 
-    <br>
-    <a href="cart.php">Back to Cart</a>
+        <p class="footer-text" style="margin-top:20px; text-align:center;">
+            <a href="cart.php" class="footer-link-register">Back to Cart</a>
+        </p>
+
+    </div>
+
 </div>
 
 </body>

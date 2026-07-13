@@ -29,13 +29,68 @@ $itemResult = $conn->query($itemSql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Order Confirmed | Edge.Express</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="../Assets/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edge.Express | Skip the Queue</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+
+
+    <link rel="stylesheet" href="../Assets/css/style.css">
+
+    <link rel="stylesheet" href="../Assets/css/navbar.css">
+
+    <link rel="stylesheet" href="../Assets/css/hero.css">
+    <link rel="stylesheet" href="../Assets/css/sections.css">
+
+    <link rel="stylesheet" href="../Assets/css/animations.css">
+
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
+
 </head>
 <body>
+
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="../Resources/EE logo.png" alt="Edge Express Logo">
+   Edge Express
+
+</div>
+
+<ul>
+
+<li><a href="index.php" class="active">Home</a></li>
+
+<li><a href="menu.php">Menu</a></li>
+
+<li><a href="about.php">About</a></li>
+
+<li><a href="contact.php">Contact</a></li>
+
+</ul>
+
+<div class="nav-btn">
+
+ <a href="../User_management/profile.php">My profile</a>
+
+</div>
+
+</nav>
 
 <div class="container py-5">
     <h1 class="page-title">Order Placed Successfully!</h1>

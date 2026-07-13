@@ -1,0 +1,311 @@
+/* ======================================
+        PICKUP PAGE
+======================================*/
+
+body{
+    background:#07111F;
+    overflow-x:hidden;
+}
+
+/* Background Glow */
+
+.background-blur{
+    position:fixed;
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    filter:blur(130px);
+    z-index:-1;
+    opacity:.25;
+}
+
+.blur1{
+    background:#23D5FF;
+    top:-120px;
+    left:-120px;
+}
+
+.blur2{
+    background:#00C896;
+    bottom:-120px;
+    right:-120px;
+}
+
+
+/* ===========================
+        WRAPPER
+=========================== */
+
+.auth-wrapper{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:170px 20px 80px;
+
+}
+
+
+/* ===========================
+        GLASS CARD
+=========================== */
+
+.auth-card{
+
+    width:550px;
+
+    padding:50px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(35px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+
+    0 25px 70px rgba(0,0,0,.35),
+
+    0 0 40px rgba(35,213,255,.12);
+
+    transition:.4s;
+
+}
+
+.auth-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 30px 80px rgba(0,0,0,.45),
+
+    0 0 55px rgba(35,213,255,.25);
+
+}
+
+
+/* ===========================
+        ICON
+=========================== */
+
+.pickup-icon{
+
+    width:95px;
+
+    height:95px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#23D5FF,#00C896);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:42px;
+
+    box-shadow:0 0 30px rgba(35,213,255,.45);
+
+}
+
+
+/* ===========================
+        TITLES
+=========================== */
+
+.page-title{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:12px;
+
+}
+
+.page-subtitle{
+
+    text-align:center;
+
+    color:#B8C7DA;
+
+    margin-bottom:35px;
+
+    font-size:17px;
+
+}
+
+
+/* ===========================
+        SELECT BOX
+=========================== */
+
+.form-control{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:18px;
+
+    outline:none;
+
+    backdrop-filter:blur(15px);
+
+    transition:.3s;
+
+}
+
+.form-control:focus{
+
+    border-color:#23D5FF;
+
+    box-shadow:0 0 20px rgba(35,213,255,.35);
+
+}
+
+.form-control option{
+
+    background:#07111F;
+
+    color:white;
+
+}
+
+
+/* ===========================
+        BUTTON
+=========================== */
+
+.btn-premium-login{
+
+    width:100%;
+
+    margin-top:30px;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#23D5FF,#00C896);
+
+    color:white;
+
+    font-size:19px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.btn-premium-login:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(35,213,255,.35);
+
+}
+
+
+/* ===========================
+        ALERT
+=========================== */
+
+.alert{
+
+    padding:15px;
+
+    margin-bottom:25px;
+
+    border-radius:15px;
+
+    background:rgba(255,77,109,.18);
+
+    border:1px solid rgba(255,77,109,.35);
+
+    color:#ffd7df;
+
+    text-align:center;
+
+}
+
+
+/* ===========================
+        BACK LINK
+=========================== */
+
+.footer-text{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.footer-link-register{
+
+    color:#23D5FF;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.footer-link-register:hover{
+
+    color:white;
+
+}
+
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:700px){
+
+.auth-card{
+
+width:100%;
+
+padding:35px 25px;
+
+}
+
+.page-title{
+
+font-size:34px;
+
+}
+
+}
