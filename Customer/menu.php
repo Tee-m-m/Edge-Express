@@ -141,13 +141,7 @@ if (!isset($_SESSION['user_id'])) {
                 </a>
 
                 <!-- Use this exact syntax for your Add buttons on menu.php -->
-<<<<<<< HEAD
                 <a href="cart.php?action=add&id=1" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
-=======
-                <a href="cart.php?action=add&id=1" class="cart-btn">
-                <i class="fas fa-cart-plus"></i> Add
-                </a>
->>>>>>> 4c24ef48ebca1149903671d4eaceee2f559501ae
             </div>
 
         </div>
@@ -184,17 +178,7 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-<<<<<<< HEAD
                 <a href="cart.php?action=add&id=2" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
-=======
-                <a href="cart.php" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
->>>>>>> 4c24ef48ebca1149903671d4eaceee2f559501ae
 
             </div>
 
@@ -233,17 +217,7 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-<<<<<<< HEAD
                 <a href="cart.php?action=add&id=3" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
-=======
-                <a href="cart.php" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
->>>>>>> 4c24ef48ebca1149903671d4eaceee2f559501ae
 
             </div>
         </div>
@@ -281,17 +255,7 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-<<<<<<< HEAD
                 <a href="cart.php?action=add&id=4" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
-=======
-                <a href="cart.php" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
->>>>>>> 4c24ef48ebca1149903671d4eaceee2f559501ae
 
             </div>
         </div>
@@ -328,12 +292,7 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-<<<<<<< HEAD
                 <a href="cart.php?action=add&id=5" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
-=======
-                <a href="cart.php" class="cart-btn">
->>>>>>> 4c24ef48ebca1149903671d4eaceee2f559501ae
-
 
             </div>
         </div>
@@ -370,17 +329,7 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-<<<<<<< HEAD
                 <a href="cart.php?action=add&id=6" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
-=======
-                <a href="cart.php" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
->>>>>>> 4c24ef48ebca1149903671d4eaceee2f559501ae
 
             </div>
         </div>
@@ -416,17 +365,7 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-<<<<<<< HEAD
                 <a href="cart.php?action=add&id=7" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
-=======
-                <a href="cart.php" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
->>>>>>> 4c24ef48ebca1149903671d4eaceee2f559501ae
 
             </div>
         </div>
@@ -462,17 +401,7 @@ if (!isset($_SESSION['user_id'])) {
 
                 </a>
 
-<<<<<<< HEAD
                 <a href="cart.php?action=add&id=8" class="cart-btn"><i class="fas fa-cart-plus"></i> Add</a>
-=======
-                <a href="cart.php" class="cart-btn">
-
-                    <i class="fas fa-cart-plus"></i>
-
-                    Add
-
-                </a>
->>>>>>> 4c24ef48ebca1149903671d4eaceee2f559501ae
 
             </div>
         </div>
